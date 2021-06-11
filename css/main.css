@@ -290,7 +290,7 @@ pre {
 
 .col-2 {
   width: -webkit-calc(16.66666667% - (4px / 2));
-  width: calc(16.66666667% - (4px / 2)); }
+  width: calc(16.66666667% - (4px / 2));}
 
 .col-3 {
   width: -webkit-calc(25% - (4px / 2));
