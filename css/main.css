@@ -355,6 +355,9 @@ pre {
 /**
  * Fixed Heights
  */
+.height-0 {
+  min-height: 80px; }
+
 .height-1 {
   min-height: 140px; }
 
