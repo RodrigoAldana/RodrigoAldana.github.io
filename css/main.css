@@ -294,7 +294,8 @@ pre {
 
 .col-3 {
   width: -webkit-calc(25% - (4px / 2));
-  width: calc(25% - (4px / 2)); }
+  width: calc(25% - (4px / 2)); 
+  padding-bottom: 100%;}
 
 .col-4 {
   width: -webkit-calc(33.33333333% - (4px / 2));
