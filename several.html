@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="/assets/ico/favicon.ico">
+
+    <title>Leobardo Campos - Selected Projects</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/assets/css/style.css" rel="stylesheet">
+    <link href="/assets/css/font-awesome.min.css" rel="stylesheet">
+    
+</head>
+
+    <body>
+ <!-- Fixed navbar -->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Leobardo Campos</a>
+    </div>
+    <div class="navbar-collapse collapse navbar-right">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="/">Home</a></li>
+        <li ><a href="carrer.html">Work Experience</a></li>
+        <li ><a href="publications.html">Publications</a></li>
+        <li ><a href="education.html">Education</a></li>
+        <li ><a href="resume.pdf">Resume</a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</div>
+
+
+            <div id="blue">
+    <div class="container">
+        <div class="row">
+            <h3>Selected Projects</h3>
+        </div><!-- /row -->
+    </div> <!-- /container -->
+</div><!-- /blue -->
+
+    <div class="container mtb">
+    <div class="text-center">
+    <h3>CinvesRob</h3>
+    </div>
+
+    <div class="row">
+    <div class="col-lg-4 col-lg-offset-1">
+        <div class="video-wrapper">
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/ev4Dg0aceQ8" width="500" height="255"  frameborder="0" allowfullscreen></iframe>
+            </div>
+            <!-- /video -->
+        </div>
+        <!-- /video-wrapper -->
+        </div>
+        <div class="col-lg-6">
+            <p class="normal">The REEM-C were constructed by PAL Robotics of Barcelona, Spain. It uses harmonic point drivers and torque sensors on its ankles. The robot has an autonomous four-hour alkaline battery and two on board computers connected to the Ethernet, one for low-level control and another for image processing. </p>
+            <p class="normal">This robot is connected to a server with the ROS system in order to develop kinematic and dynamic models such as the walking pattern generation algorithms as well as those of control, which can be executed online in the robot. Libraries that include routines for conformal geometric algebra calculations for perception, inverse and differential kinematics, dynamics, and algorithms are used for generating walking and control patterns.</p>
+        </div>
+    </div><! --/row -->
+</div><! --/container -->
+
+<div class="center-block ">
+<div class="col-lg-8 col-lg-offset-2">
+ <div class="hline"></div>
+</div>
+</div><! --/row -->
+    <div class="container mtb">
+    <div class="text-center">
+    <h3>iDiagnosis</h3>
+    </div>
+    <div class="row">
+        <div class="col-lg-3 col-lg-offset-2">
+            <img class="img-responsive" src="/assets/idiagnosis.png" alt="idiagnosis">
+        </div>
+        <div class="col-lg-6">
+            <p class="normal">Development of an expert system to assist the medical community to diagnose the most common diseases presenting a series of defined symptoms. It is based in Modus Ponen inference rules taken from a knowledge base.</p>
+            <p class="normal">If the desease is not found by the inference rules, a probabilistic analysis is used insterad. Hosted on a web server, implemented with ATL technology to execute a service with the expert system and CGI standard method to present the graphic interface web.</p>
+        </div>
+    </div><! --/row -->
+</div><! --/container -->
+
+
+
+
+
+
+         <div id="footerwrap">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <h4>About</h4>
+                <div class="hline-w"></div>
+                <p>This is a website based in several free jekyll templates available to publicize the trajectory of Leobardo Campos.</p>
+            </div>
+            <div class="col-lg-4">
+            </div>
+            <div class="col-lg-4">
+                <h4>Contact</h4>
+                <div class="hline-w"></div>
+                <p>
+                        Leobardo Campos <br>
+                        leo.campos.macias@gmail.com <br>
+                </p>
+            </div>
+        </div><! --/row -->
+    </div><! --/container -->
+</div><! --/footerwrap -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/retina-1.1.0.js"></script>
+<script src="js/jquery.hoverdir.js"></script>
+<script src="js/jquery.hoverex.min.js"></script>
+<script src="js/jquery.prettyPhoto.js"></script>
+<script src="js/jquery.isotope.min.js"></script>
+<script src="js/custom.js"></script>
+
+<script>
+// Portfolio
+(function($) {
+	"use strict";
+	var $container = $('.portfolio'),
+		$items = $container.find('.portfolio-item'),
+		portfolioLayout = 'fitRows';
+		
+		if( $container.hasClass('portfolio-centered') ) {
+			portfolioLayout = 'masonry';
+		}
+				
+		$container.isotope({
+			filter: '*',
+			animationEngine: 'best-available',
+			layoutMode: portfolioLayout,
+			animationOptions: {
+			duration: 750,
+			easing: 'linear',
+			queue: false
+		},
+		masonry: {
+		}
+		}, refreshWaypoints());
+		
+		function refreshWaypoints() {
+			setTimeout(function() {
+			}, 1000);   
+		}
+				
+		$('nav.portfolio-filter ul a').on('click', function() {
+				var selector = $(this).attr('data-filter');
+				$container.isotope({ filter: selector }, refreshWaypoints());
+				$('nav.portfolio-filter ul a').removeClass('active');
+				$(this).addClass('active');
+				return false;
+		});
+		
+		function getColumnNumber() { 
+			var winWidth = $(window).width(), 
+			columnNumber = 1;
+		
+			if (winWidth > 1200) {
+				columnNumber = 5;
+			} else if (winWidth > 950) {
+				columnNumber = 4;
+			} else if (winWidth > 600) {
+				columnNumber = 3;
+			} else if (winWidth > 400) {
+				columnNumber = 2;
+			} else if (winWidth > 250) {
+				columnNumber = 1;
+			}
+				return columnNumber;
+			}       
+			
+			function setColumns() {
+				var winWidth = $(window).width(), 
+				columnNumber = getColumnNumber(), 
+				itemWidth = Math.floor(winWidth / columnNumber);
+				
+				$container.find('.portfolio-item').each(function() { 
+					$(this).css( { 
+					width : itemWidth + 'px' 
+				});
+			});
+		}
+		
+		function setPortfolio() { 
+			setColumns();
+			$container.isotope('reLayout');
+		}
+			
+		$container.imagesLoaded(function () { 
+			setPortfolio();
+		});
+		
+		$(window).on('resize', function () { 
+		setPortfolio();          
+	});
+})(jQuery);
+</script>
+
+    </body>
+</html>

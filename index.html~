@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="/assets/ico/favicon.ico">
+
+    <title>Leobardo Campos - Home</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/assets/css/style.css" rel="stylesheet">
+    <link href="/assets/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css">
+      <link rel="alternate" type="application/rss+xml" title="Leobardo Campos" href="http://localhost:4000/feed.xml">
+    <!-- Custom CSS -->
+    <!--<link rel="stylesheet" href="/css/main.css">-->
+
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+    <body>
+        <!-- Fixed navbar -->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Leobardo Campos</a>
+    </div>
+    <div class="navbar-collapse collapse navbar-right">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="/">Home</a></li>
+        <li ><a href="carrer.html">Work Experience</a></li>
+        <li ><a href="publications.html">Publications</a></li>
+        <li ><a href="education.html">Education</a></li>
+        <li ><a href="resume.pdf">Resume</a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</div>
+
+
+        <div class="page-content margin-bot-big">
+      		<div class="wrapper">        
+        		<div class="home">
+ <br><br><br><br><br>
+ <div class="col col-12">
+      <div class="col col-3">
+          <div class="block glass"> <img alt="avatar" src="assets/avatar.png" >
+          </div>
+        
+      </div>
+      <div class="col col-9">
+        <div class="block Cgrey">
+            <div class="block-body">
+                <h2>Hi, I am Leobardo Campos</h2>
+                <p class="black-text">I am currently an Autonomous Systems Engineer at the Multi-Agent Autonomous Systems Lab at <a class="begin-block" href="http://www.intel.com/content/www/us/en/research/intel-research.html" >Intel Labs</a>. My research focuses on enabling aerial systems to autonomously navigate and coordinate in complex environments. I also finished a Masters in <a class="begin-block" href="http://www.cinvestavgdl-control.org.mx/index.php/en/">Automatic Control</a> in 2015 at <a class="begin-block" href="http://www.gdl.cinvestav.mx/">Cinvestav—IPN</a>.</p>
+                <p class="black-text">Before that, I finished my Engineer at <a class="begin-block" href=" http://www.ceti.mx/">CETI</a> in Mechatronics with major in Robotics.</p>
+                <center>
+                <a href="mailto:lecampos@gdl.cinvestav.mx">
+                <img alt="email" src="assets/gmail.png" width="38" height="25">
+                </a>&ensp; &ensp;
+                <a href="https://www.linkedin.com/in/leo-campos-b97218a1/">
+                <img alt="linkedin" src="assets/linkedin.png" width="29" height="25">
+                </a>&ensp; &ensp;
+                <a href="https://www.researchgate.net/profile/Leobardo_Campos">
+                <img alt="research_gate" src="assets/research_gate.png" width="27" height="25">
+                </a>&ensp; &ensp;
+                <a href="https://scholar.google.com/citations?hl=es&user=2pYKbQQAAAAJ">
+                <img alt="google_scholar" src="assets/google_scholar.png" width="37" height="35">
+                </a>&ensp;
+                <a href="https://github.com/lecampos">
+                <img alt="github" src="assets/github.png" width="35" height="30">
+                </a>
+
+                </center>
+            </div>
+        </div>
+      </div>  
+  </div>
+  <div class="col col-12">
+    
+      <div class="col col-7">
+        <div class="block" style="background-image:url(assets/1.png)">
+            <div class="block-body height-2">              
+                <h2 class="align-top-right">
+                  <a class="custom"  href="quads.html">Multirotors</a>
+                </h2>
+            </div>
+        </div>
+      </div>
+    
+      <div class="col col-5">
+        <div class="block" style="background-image:url(assets/2.png)">
+            <div class="block-body height-2">              
+                <h2 class="align-top-right">
+                  <a class="custom"  href="mexone.html">MexOne</a>
+                </h2>
+            </div>
+        </div>
+      </div>
+    
+    </div>
+  <div class="col col-9">
+    
+      <div class="col col-3">
+        <div class="block Cpurple">
+            <div class="block-body height-1">
+
+                <h2>
+                  <a class="post-link blocks" href="carrer.html">Work Experience</a>
+                </h2>
+            </div>
+        </div>
+      </div>
+    
+      <div class="col col-6">
+        <div class="block Cgreen">
+            <div class="block-body height-1">
+
+                <h2>
+                  <a class="post-link blocks" href="publications.html">Publications</a>
+                </h2>
+            </div>
+        </div>
+      </div>
+    
+      <div class="col col-3">
+        <div class="block Cpurple">
+            <div class="block-body height-1">
+
+                <h2>
+                  <a class="post-link blocks" href="education.html">Education</a>
+                </h2>
+            </div>
+        </div>
+      </div>
+    
+      <div class="col col-3">
+        <div class="block Cred">
+            <div class="block-body height-1">
+
+                <h2>
+                  <a class="post-link blocks" href="">Resume</a>
+                </h2>
+            </div>
+        </div>
+      </div>
+    
+      <div class="col col-3">
+        <div class="block Cred">
+            <div class="block-body height-1">
+
+                <h2>
+                  <a class="post-link blocks" href="several.html">Selected Projects</a>
+                </h2>
+            </div>
+        </div>
+      </div>
+    
+      <div class="col col-6">
+        <div class="block Cgreen">
+            <div class="block-body height-1">
+
+                <h2>
+                  <a class="post-link blocks" href="">Additional Information</a>
+                </h2>
+            </div>
+        </div>
+      </div>
+    
+    </div>
+    <div class="col col-3">
+        <div class="block Cblue">
+            <div class="block-body">
+                <h3 class="margin-bot">Skills</h3>                
+                
+                <span class="post-meta white-text">Control Theory</span>
+                <div class="progress margin-bot"><div class="progress-9"></div></div>                
+                
+                <span class="post-meta white-text">Humanoid Robotics</span>
+                <div class="progress margin-bot"><div class="progress-8"></div></div>                
+                
+                <span class="post-meta white-text">Multirotors</span>
+                <div class="progress margin-bot"><div class="progress-7"></div></div>                
+                
+                <span class="post-meta white-text">Robot Motion Planning</span>
+                <div class="progress margin-bot"><div class="progress-8"></div></div>                
+                
+                <span class="post-meta white-text">C/C++</span>
+                <div class="progress margin-bot"><div class="progress-8"></div></div>                
+                
+                <span class="post-meta white-text">System Modeling</span>
+                <div class="progress margin-bot"><div class="progress-7"></div></div>                
+                
+                <span class="post-meta white-text">Robot Vision</span>
+                <div class="progress margin-bot"><div class="progress-6"></div></div>                
+                
+                <span class="post-meta white-text">Artificial Inteligence</span>
+                <div class="progress margin-bot"><div class="progress-4"></div></div>                
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+      		</div>
+    	</div>
+
+        <div id="footerwrap">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <h4>About</h4>
+                <div class="hline-w"></div>
+                <p>This is a website based in several free jekyll templates available to publicize the trajectory of Leobardo Campos.</p>
+            </div>
+            <div class="col-lg-4">
+            </div>
+            <div class="col-lg-4">
+                <h4>Contact</h4>
+                <div class="hline-w"></div>
+                <p>
+                    
+                        Leobardo Campos <br>
+                    
+                        leo.campos.macias@gmail.com <br>
+                    
+                </p>
+            </div>
+        </div><! --/row -->
+    </div><! --/container -->
+</div><! --/footerwrap -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+<script src="/assets/js/retina-1.1.0.js"></script>
+<script src="/assets/js/jquery.hoverdir.js"></script>
+<script src="/assets/js/jquery.hoverex.min.js"></script>
+<script src="/assets/js/jquery.prettyPhoto.js"></script>
+<script src="/assets/js/jquery.isotope.min.js"></script>
+<script src="/assets/js/custom.js"></script>
+
+<script>
+// Portfolio
+(function($) {
+	"use strict";
+	var $container = $('.portfolio'),
+		$items = $container.find('.portfolio-item'),
+		portfolioLayout = 'fitRows';
+		
+		if( $container.hasClass('portfolio-centered') ) {
+			portfolioLayout = 'masonry';
+		}
+				
+		$container.isotope({
+			filter: '*',
+			animationEngine: 'best-available',
+			layoutMode: portfolioLayout,
+			animationOptions: {
+			duration: 750,
+			easing: 'linear',
+			queue: false
+		},
+		masonry: {
+		}
+		}, refreshWaypoints());
+		
+		function refreshWaypoints() {
+			setTimeout(function() {
+			}, 1000);   
+		}
+				
+		$('nav.portfolio-filter ul a').on('click', function() {
+				var selector = $(this).attr('data-filter');
+				$container.isotope({ filter: selector }, refreshWaypoints());
+				$('nav.portfolio-filter ul a').removeClass('active');
+				$(this).addClass('active');
+				return false;
+		});
+		
+		function getColumnNumber() { 
+			var winWidth = $(window).width(), 
+			columnNumber = 1;
+		
+			if (winWidth > 1200) {
+				columnNumber = 5;
+			} else if (winWidth > 950) {
+				columnNumber = 4;
+			} else if (winWidth > 600) {
+				columnNumber = 3;
+			} else if (winWidth > 400) {
+				columnNumber = 2;
+			} else if (winWidth > 250) {
+				columnNumber = 1;
+			}
+				return columnNumber;
+			}       
+			
+			function setColumns() {
+				var winWidth = $(window).width(), 
+				columnNumber = getColumnNumber(), 
+				itemWidth = Math.floor(winWidth / columnNumber);
+				
+				$container.find('.portfolio-item').each(function() { 
+					$(this).css( { 
+					width : itemWidth + 'px' 
+				});
+			});
+		}
+		
+		function setPortfolio() { 
+			setColumns();
+			$container.isotope('reLayout');
+		}
+			
+		$container.imagesLoaded(function () { 
+			setPortfolio();
+		});
+		
+		$(window).on('resize', function () { 
+		setPortfolio();          
+	});
+})(jQuery);
+</script>
+    </body>
+</html>
