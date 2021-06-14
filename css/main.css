@@ -398,6 +398,11 @@ pre {
   a.blocks:hover {
     color: #fefefe; }
 
+.pub_list {
+  margin-left: 5%;
+}
+
+
 /**
  * Posts
  */
