@@ -50,9 +50,17 @@
 
 
 
+
+
+
+
+
+
+
+
                <div class="blog-short">
                   <h3 class="big">Generating new classes of fixed-time stable systems with predefined upper bound for the settling time</h3>
-				  <h2 class="small">Rodrigo Aldana-López, David Gómez-Gutiérrez, Esteban Jiménez-Rodríguez, Juan Diego Sánchez-Torres & Michael Defoort</h2>
+				  <h2 class="small">Rodrigo Aldana-López, David Gómez-Gutiérrez, Esteban Jiménez-Rodríguez, Juan Diego Sánchez-Torres, Michael Defoort</h2>
                   <div>
                      <small>
                      <i class="fa fa-calendar"></i>
@@ -73,8 +81,21 @@
                <br>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
                <div class="blog-short">
                   <h3 class="big">Autonomous navigation of MAVs in unknown cluttered environments</h3>
+				  <h2 class="small">Leobardo Campos-Macías, Rodrigo Aldana-López, Rafael de la Guardia, José I. Parra-Vilchis, David Gómez-Gutiérrez</h2>
                   <div>
                      <small>
                      <i class="fa fa-calendar"></i>
@@ -93,15 +114,30 @@
                   <a class="pull-right marginBottom10" href="https://onlinelibrary.wiley.com/doi/abs/10.1002/rob.21959">Read More</a>
                </div>
                <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
                <div class="blog-short">
                   <h3 class="big">A predefined-time first-order exact differentiator based on time-varying gains</h3>
+				  <h2 class="small">Rodrigo Aldana-López, David Gómez-Gutiérrez, Miguel A. Trujillo, Manuel Navarro-Gutiérrez, Javier Ruiz-León, Hector M. Becerra</h2>
                   <div>
                      <small>
                      <i class="fa fa-calendar"></i>
                      <time>
-                     May, 2021
+                     April, 2021
                      </time>
                      </small>
                   </div>
@@ -110,15 +146,260 @@
                         alt="ral_paper"  class="pull-left img-responsive thumb img-thumbnail" />
                   </div>
                   <article class="excerpt">
-                     <p class="normal">Recently, there have been many advances in the algorithms required for autonomous navigation in unknown environments, such as mapping, collision avoidance, trajectory planning, and motion control. These components have been integrated into drones with high-end computers and graphics processors. However, further development is required to enable compute-constrained platforms with such autonomous navigation capabilities. To address this issue, in this paper, we present an autonomous navigation framework for reaching a goal in unknown three-dimensional cluttered environments. The framework consists of three main components. The first component is a computationally efficient method for mapping the environment from the disparity measurements obtained from a depth sensor. The second component is a stochastic approach to generate a path to a given goal, taking into account the field of view constraints on the space that is assumed to be safe for navigation. The third method is a fast algorithm for the online generation of motion plans, taking into account the robot's dynamic constraints, model and environmental uncertainty, and disturbances. We provide a qualitative and quantitative comparison with existing reaching a goal and exploration methods, showing the superior performance of our approach. Additionally, we present indoors and outdoors experiments using a robotic platform based on the Intel Ready to Fly drone kit, which represents the implementation, in the most computational constrained platform, of autonomous navigation in unknown cluttered environments demonstrated to date.</p>
+                     <p class="normal">Recently, a first-order differentiator based on time-varying gains was introduced in the literature, in its nonrecursive form, for signals having a second-order derivative bounded by a known time-varying function, where such time-varying bound has a logarithmic derivative bounded by a known constant. It has been shown that such differentiator is globally finite-time convergent. In this article, we redesign such an algorithm, using time base generators (a class of time-varying gains), to obtain a differentiator algorithm for the same class of signals, but with guaranteed convergence before a desired time, that is, with fixed-time convergence with an a priori user-defined upper bound for the settling time. Thus, our approach can be applied for scenarios under time-constraints. We present numerical examples exposing the contribution with respect to related state-of-the-art algorithms.</p>
                   </article>
-                  <a class="pull-right marginBottom10" href="https://onlinelibrary.wiley.com/doi/abs/10.1002/rob.21959">Read More</a>
+                  <a class="pull-right marginBottom10" href="https://onlinelibrary.wiley.com/doi/abs/10.1002/rnc.5536">Read More</a>
                </div>
                <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+               <div class="blog-short">
+                  <h3 class="big">Autonomous and non-autonomous fixed-time leader–follower consensus for second-order multi-agent systems</h3>
+				  <h2 class="small">M. A. Trujillo, R. Aldana-López, D. Gómez-Gutiérrez, M. Defoort, J. Ruiz-León & H. M. Becerra </h2>
+                  <div>
+                     <small>
+                     <i class="fa fa-calendar"></i>
+                     <time>
+                     November, 2020
+                     </time>
+                     </small>
+                  </div>
+                  <div class="imgcontainer col-xs-12 col-sm-4 col-md-3 col-lg-3">
+                     <img src="assets/publications/ral.png"
+                        alt="ral_paper"  class="pull-left img-responsive thumb img-thumbnail" />
+                  </div>
+                  <article class="excerpt">
+                     <p class="normal">This paper addresses the problem of consensus tracking with fixed-time convergence, for leader–follower multi-agent systems with double-integrator dynamics, where only a subset of followers has access to the state of the leader. The control scheme is divided into two steps. The first one is dedicated to the estimation of the leader state by each follower in a distributed way and in a fixed-time. Then, based on the estimate of the leader state, each follower computes its control law to track the leader in a fixed-time. In this paper, two control strategies are investigated and compared to solve the two mentioned steps. The first one is an autonomous protocol which ensures a fixed-time convergence for the observer and for the controller parts where the Upper Bound of the Settling-Time (UBST) is set a priory by the user. Then, the previous strategy is redesigned using time-varying gains to obtain a non-autonomous protocol. This enables to obtain less conservative estimates of the UBST while guaranteeing that the time-varying gains remain bounded. Some numerical examples show the effectiveness of the proposed consensus protocols.</p>
+                  </article>
+                  <a class="pull-right marginBottom10" href="https://link.springer.com/article/10.1007/s11071-020-06075-7">Read More</a>
+               </div>
+               <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+               <div class="blog-short">
+                  <h3 class="big">On predefined-time consensus protocols for dynamic networks</h3>
+				  <h2 class="small">R. Aldana-López, D. Gómez-Gutiérrez, E. Jiménez-Rodríguez, J.D. Sánchez-Torres, A.G. Loukianov, </h2>
+                  <div>
+                     <small>
+                     <i class="fa fa-calendar"></i>
+                     <time>
+                     November, 2020
+                     </time>
+                     </small>
+                  </div>
+                  <div class="imgcontainer col-xs-12 col-sm-4 col-md-3 col-lg-3">
+                     <img src="assets/publications/ral.png"
+                        alt="ral_paper"  class="pull-left img-responsive thumb img-thumbnail" />
+                  </div>
+                  <article class="excerpt">
+                     <p class="normal">This paper presents new classes of consensus protocols with fixed-time convergence, which enable the definition of an upper bound for consensus state as a parameter of the consensus protocol, ensuring its independence from the initial condition of the nodes. We demonstrate that our methodology subsumes current classes of fixed-time consensus protocols that are based on homogeneous in the bi-limit vector fields. Moreover, the proposed framework enables for the development of independent consensus protocols that are not needed to be homogeneous in the bi-limit. This proposal offers extra degrees of freedom to implement consensus algorithms with enhanced convergence features, such as reducing the gap between the real convergence moment and the upper bound chosen by the user. We present two classes of fixed-time consensus protocols for dynamic networks, consisting of nodes with first-order dynamics, and provide sufficient conditions to set the upper bound for convergence a priori as a consensus protocol parameter. The first protocol converges to the average value of the initial condition of the nodes, even when switching among dynamic networks. Unlike the first protocol, which requires, at each instant, an evaluation of the non-linear predefined time-consensus function, hereinafter introduced, per neighbor, the second protocol requires only a single evaluation and ensures a predefined time-consensus for static topologies and fixed-time convergence for dynamic networks. Predefined-time convergence is proved using Lyapunov analysis, and simulations are carried out to illustrate the performance of the suggested techniques. The exposed results have been applied to the design of predefined time-convergence formation control protocols to exemplify their main features.</p>
+                  </article>
+                  <a class="pull-right marginBottom10" href="https://www.sciencedirect.com/science/article/pii/S0016003219308622">Read More</a>
+               </div>
+               <br>
+
+
+
+
+
+
+
+
+
+
+
+
+               <div class="blog-short">
+                  <h3 class="big">Predefined-time integral sliding mode control of second-order systems</h3>
+				  <h2 class="small">Juan Diego Sánchez-Torres, Aldo Jonathan Muñoz-Vázquez, Michael Defoort, Rodrigo Aldana-López, David Gómez-Gutiérrez </h2>
+                  <div>
+                     <small>
+                     <i class="fa fa-calendar"></i>
+                     <time>
+                     September, 2020
+                     </time>
+                     </small>
+                  </div>
+                  <div class="imgcontainer col-xs-12 col-sm-4 col-md-3 col-lg-3">
+                     <img src="assets/publications/ral.png"
+                        alt="ral_paper"  class="pull-left img-responsive thumb img-thumbnail" />
+                  </div>
+                  <article class="excerpt">
+                     <p class="normal">This manuscript introduces the design of a controller that ensures predefined-time convergence for a class of second-order systems. In contrast to finite- and fixed-time controllers, predefined-time schemes allow to prescribe a bound for the convergence time as a control parameter. First, a predefined-time integral sliding mode controller allows rejecting unknown but bounded matched disturbances. Then, the system dynamics evolve free of the effect of disturbances during the integral sliding motion. Finally, an ideal controller enforces convergence also in predefined-time. A Lyapunov-like characterisation for predefined-time stability is conducted, and numerical results are provided to illustrate the validity of the proposed technique.</p>
+                  </article>
+                  <a class="pull-right marginBottom10" href="https://www.tandfonline.com/doi/abs/10.1080/00207721.2020.1815893#:~:text=Predefined%2Dtime%20integral%20sliding%20mode%20control%20of%20second%2Dorder%20systems,-Full%20Article&text=This%20manuscript%20introduces%20the%20design,class%20of%20second%2Dorder%20systems.&text=Then%2C%20the%20system%20dynamics%20evolve,during%20the%20integral%20sliding%20motion.">Read More</a>
+               </div>
+               <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+               <div class="blog-short">
+                  <h3 class="big">Low-Complexity Maximum-Likelihood Detector for IoT BLE Devices</h3>
+				  <h2 class="small">J. Valencia-Velasco, O. Longoria-Gandara, R. Aldana-Lopez and L. Pizano-Escalante</h2>
+                  <div>
+                     <small>
+                     <i class="fa fa-calendar"></i>
+                     <time>
+                     June, 2020
+                     </time>
+                     </small>
+                  </div>
+                  <div class="imgcontainer col-xs-12 col-sm-4 col-md-3 col-lg-3">
+                     <img src="assets/publications/ral.png"
+                        alt="ral_paper"  class="pull-left img-responsive thumb img-thumbnail" />
+                  </div>
+                  <article class="excerpt">
+                     <p class="normal">Internet of Things (IoT) is a technology that has overgrown and whose interest lies in the connection of diverse kinds of devices to collect and exchange data. Since most IoT devices are mobile, the hardware resources are hard limited; thus, complexity reduction becomes a relevant concern in this context. Bluetooth low energy (BLE) communication standard has an important position in IoT due to its Gaussian frequency-shift keying (GFSK) modulation scheme employed in the physical layer, which provides both attractive spectral and power efficiency. Typically, GFSK requires a maximum-likelihood sequence estimator (MLSE) implemented through the Viterbi algorithm (VA) at the receiver. This article provides a GFSK receiver based on a new paradigm that transforms the I-Q baseband signal and uses the VA with a reduced-complexity proposed metrics. Comparisons of theoretical and simulated results are presented, and they show that the proposed metrics for the GFSK receiver are compliant with the Bluetooth standard. Henceforth, the proposed receiver is an attractive scheme for IoT BLE devices.</p>
+                  </article>
+                  <a class="pull-right marginBottom10" href="https://ieeexplore.ieee.org/document/8962324">Read More</a>
+               </div>
+               <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+               <div class="blog-short">
+                  <h3 class="big">A class of robust consensus algorithms with predefined-time convergence under switching topologies</h3>
+				  <h2 class="small">Rodrigo Aldana-López, David Gómez-Gutiérrez, Michael Defoort, Juan Diego Sánchez-Torres, Aldo Jonathan Muñoz-Vázquez
+</h2>
+                  <div>
+                     <small>
+                     <i class="fa fa-calendar"></i>
+                     <time>
+                     September, 2019
+                     </time>
+                     </small>
+                  </div>
+                  <div class="imgcontainer col-xs-12 col-sm-4 col-md-3 col-lg-3">
+                     <img src="assets/publications/ral.png"
+                        alt="ral_paper"  class="pull-left img-responsive thumb img-thumbnail" />
+                  </div>
+                  <article class="excerpt">
+                     <p class="normal">This paper addresses the robust consensus problem under switching topologies. Contrary to existing methods, the proposed approach provides decentralized protocols that achieve consensus for networked multiagent systems in a predefined time. Namely, the protocol design provides a tuning parameter that allows setting the convergence time of the agents to a consensus state. An appropriate Lyapunov analysis exposes the capability of the current proposal to achieve predefined-time consensus over switching topologies despite the presence of bounded perturbations. Finally, this paper presents a comparison showing that the suggested approach subsumes existing fixed-time consensus algorithms, which allows to provide extra degrees of freedom to obtain predefined-time consensus protocols with improved convergence characteristics, for instance, to reduce the slack between the true convergence time and the predefined upper bound. Numerical results are given to illustrate the effectiveness and advantages of the proposed method.</p>
+                  </article>
+                  <a class="pull-right marginBottom10" href="https://onlinelibrary.wiley.com/doi/abs/10.1002/rnc.4715">Read More</a>
+               </div>
+               <br>
+
+
+
+
+
+
+
+
+
+
+
+               <div class="blog-short">
+                  <h3 class="big">Enhancing the settling time estimation of a class of fixed-time stable systems</h3>
+				  <h2 class="small">Rodrigo Aldana-López, David Gómez-Gutiérrez, Esteban Jiménez-Rodríguez, Juan Diego Sánchez-Torres, Michael Defoort</h2>
+                  <div>
+                     <small>
+                     <i class="fa fa-calendar"></i>
+                     <time>
+                     May, 2019
+                     </time>
+                     </small>
+                  </div>
+                  <div class="imgcontainer col-xs-12 col-sm-4 col-md-3 col-lg-3">
+                     <img src="assets/publications/ral.png"
+                        alt="ral_paper"  class="pull-left img-responsive thumb img-thumbnail" />
+                  </div>
+                  <article class="excerpt">
+                     <p class="normal">In this paper, we provide a new nonconservative upper bound for the settling time of a class of fixed-time stable systems. To expose the value and the applicability of this result, we present four main contributions. First, we revisit the well-known class of fixed-time stable systems, to show the conservatism of the classical upper estimate of its settling time. Second, we provide the smallest constant that the uniformly upper bounds the settling time of any trajectory of the system under consideration. Third, introducing a slight modification of the previous class of fixed-time systems, we propose a new predefined-time convergent algorithm where the least upper bound of the settling time is set a priori as a parameter of the system. At last, we design a class of predefined-time controllers for first- and second-order systems based on the exposed stability analysis. Simulation results highlight the performance of the proposed scheme regarding settling time estimation compared to existing methods.</p>
+                  </article>
+                  <a class="pull-right marginBottom10" href="https://onlinelibrary.wiley.com/doi/full/10.1002/rnc.4600">Read More</a>
+               </div>
+               <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
          </div>
       </div>
       <br><br>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
