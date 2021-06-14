@@ -1,0 +1,9 @@
+@ARTICLE{9448332,
+  author={Haimovich, Hernan and Seeber, Richard and Aldana-López, Rodrigo and Gómez-Gutiérrez, David},
+  journal={IEEE Control Systems Letters}, 
+  title={Differentiator for Noisy Sampled Signals with Best Worst-Case Accuracy*}, 
+  year={2021},
+  volume={},
+  number={},
+  pages={1-1},
+  doi={10.1109/LCSYS.2021.3087542}}

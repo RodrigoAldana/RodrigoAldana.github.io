@@ -1,0 +1,10 @@
+@article{article,
+author = {Trujillo, Miguel and Aldana, Rodrigo and Gomez-Gutierrez, David and Defoort, Michael and Ruiz-Leon, Javier and Becerra, Hector M.},
+year = {2020},
+month = {12},
+pages = {1-18},
+title = {Autonomous and non-autonomous fixed-time leader–follower consensus for second-order multi-agent systems},
+volume = {102},
+journal = {Nonlinear Dynamics},
+doi = {10.1007/s11071-020-06075-7}
+}

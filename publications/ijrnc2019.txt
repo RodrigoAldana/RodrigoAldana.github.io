@@ -1,0 +1,15 @@
+@article{https://doi.org/10.1002/rnc.4715,
+author = {Aldana-López, Rodrigo and Gómez-Gutiérrez, David and Defoort, Michael and Sánchez-Torres, Juan Diego and Muñoz-Vázquez, Aldo Jonathan},
+title = {A class of robust consensus algorithms with predefined-time convergence under switching topologies},
+journal = {International Journal of Robust and Nonlinear Control},
+volume = {29},
+number = {17},
+pages = {6179-6198},
+keywords = {consensus, fixed-time consensus, multiagent systems, predefined-time consensus, prescribed-time consensus, switching topology},
+doi = {https://doi.org/10.1002/rnc.4715},
+url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/rnc.4715},
+eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1002/rnc.4715},
+abstract = {Summary This paper addresses the robust consensus problem under switching topologies. Contrary to existing methods, the proposed approach provides decentralized protocols that achieve consensus for networked multiagent systems in a predefined time. Namely, the protocol design provides a tuning parameter that allows setting the convergence time of the agents to a consensus state. An appropriate Lyapunov analysis exposes the capability of the current proposal to achieve predefined-time consensus over switching topologies despite the presence of bounded perturbations. Finally, this paper presents a comparison showing that the suggested approach subsumes existing fixed-time consensus algorithms, which allows to provide extra degrees of freedom to obtain predefined-time consensus protocols with improved convergence characteristics, for instance, to reduce the slack between the true convergence time and the predefined upper bound. Numerical results are given to illustrate the effectiveness and advantages of the proposed method.},
+year = {2019}
+}
+
