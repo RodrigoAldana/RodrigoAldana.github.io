@@ -346,7 +346,7 @@ pre {
   .col-11,
   .col-12 {
     width: -webkit-calc(100% - (4px / 2));
-    width: calc(100% - (4px / 2)); } }
+    width: calc(100% - (4px / Dynamic consensus in multi-robot systems2)); } }
 @media screen and (max-width: 600px) {
   .col {
     float: none;
