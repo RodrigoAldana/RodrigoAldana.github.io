@@ -1,0 +1,30 @@
+
+
+
+
+
+
+
+@article{doi:10.1080/00207721.2020.1815893,
+author = {Juan Diego Sánchez-Torres and Aldo Jonathan Muñoz-Vázquez and Michael Defoort and Rodrigo Aldana-López and David Gómez-Gutiérrez},
+title = {Predefined-time integral sliding mode control of second-order systems},
+journal = {International Journal of Systems Science},
+volume = {51},
+number = {16},
+pages = {3425-3435},
+year  = {2020},
+publisher = {Taylor & Francis},
+doi = {10.1080/00207721.2020.1815893},
+
+URL = { 
+        https://doi.org/10.1080/00207721.2020.1815893
+    
+},
+eprint = { 
+        https://doi.org/10.1080/00207721.2020.1815893
+    
+}
+
+}
+
+
