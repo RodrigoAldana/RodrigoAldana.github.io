@@ -1,0 +1,15 @@
+@article{ALDANALOPEZ20202921,
+title = {EDC: Exact Dynamic Consensus},
+journal = {IFAC-PapersOnLine},
+volume = {53},
+number = {2},
+pages = {2921-2926},
+year = {2020},
+note = {21th IFAC World Congress},
+issn = {2405-8963},
+doi = {https://doi.org/10.1016/j.ifacol.2020.12.966},
+url = {https://www.sciencedirect.com/science/article/pii/S2405896320313264},
+author = {Rodrigo Aldana-López and Rosario Aragüés and Carlos Sagüés},
+keywords = {dynamic consensus, high order sliding modes, multi-agent systems},
+abstract = {This article addresses the problem of average consensus by a multi-agent system when the desired consensus quantity is a time varying signal, in particular the average of individual time varying signals localized at the agents. Although this problem has been addresses in existing literature by linear schemes, only bounded steady-state errors has been achieved. In this work, we propose a new exact dynamic consensus algorithm which leverages high order sliding modes to achieve zero steady-state error of the average of time varying reference signals in a group of agents. Moreover, our proposal is also able to achieve consensus to high order derivatives of the average signal, if desired. Finally, the effectiveness and advantages of our proposal are shown with concrete simulation scenarios.}
+}
