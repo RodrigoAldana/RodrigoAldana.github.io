@@ -1,0 +1,15 @@
+@article{https://doi.org/10.1002/rob.21959,
+author = {Campos-Macías, Leobardo and Aldana-López, Rodrigo and de la Guardia, Rafael and Parra-Vilchis, José I. and Gómez-Gutiérrez, David},
+title = {Autonomous navigation of MAVs in unknown cluttered environments},
+journal = {Journal of Field Robotics},
+volume = {38},
+number = {2},
+pages = {307-326},
+keywords = {aerial systems, autonomous vehicle navigation, collision avoidance, navigation in unknown environments, perception and autonomy, visual-based navigation},
+doi = {https://doi.org/10.1002/rob.21959},
+url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/rob.21959},
+eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1002/rob.21959},
+abstract = {Abstract Recently, there have been many advances in the algorithms required for autonomous navigation in unknown environments, such as mapping, collision avoidance, trajectory planning, and motion control. These components have been integrated into drones with high-end computers and graphics processors. However, further development is required to enable compute-constrained platforms with such autonomous navigation capabilities. To address this issue, in this paper, we present an autonomous navigation framework for reaching a goal in unknown three-dimensional cluttered environments. The framework consists of three main components. The first component is a computationally efficient method for mapping the environment from the disparity measurements obtained from a depth sensor. The second component is a stochastic approach to generate a path to a given goal, taking into account the field of view constraints on the space that is assumed to be safe for navigation. The third method is a fast algorithm for the online generation of motion plans, taking into account the robot's dynamic constraints, model and environmental uncertainty, and disturbances. We provide a qualitative and quantitative comparison with existing reaching a goal and exploration methods, showing the superior performance of our approach. Additionally, we present indoors and outdoors experiments using a robotic platform based on the Intel Ready to Fly drone kit, which represents the implementation, in the most computational constrained platform, of autonomous navigation in unknown cluttered environments demonstrated to date. Open source code is available at: https://github.com/IntelLabs/autonomousmavs. The video of the experimental results can be found in https://youtu.be/79IFfQfvXLE.},
+year = {2021}
+}
+
