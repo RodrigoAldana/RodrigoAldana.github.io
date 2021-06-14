@@ -1,0 +1,10 @@
+@article{article,
+author = {Jose M., Valencia and Aldana, Rodrigo and Longoria-Gandara, Omar and Pizano-Escalante, Luis},
+year = {2018},
+month = {07},
+pages = {},
+title = {Digital linear GFSK demodulator for IoT devices},
+volume = {12},
+journal = {IET Communications},
+doi = {10.1049/iet-com.2018.5040}
+}
