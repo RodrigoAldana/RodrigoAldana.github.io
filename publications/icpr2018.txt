@@ -1,0 +1,9 @@
+@INPROCEEDINGS{8546084,
+  author={Aldana, Rodrigo and Campos-Macías, Leobardo and Zamora, Julio and Gomez-Gutierrez, David and Cruz, Adan},
+  booktitle={2018 24th International Conference on Pattern Recognition (ICPR)}, 
+  title={Dynamic Learning Rate for Neural Networks: A Fixed-Time Stability Approach}, 
+  year={2018},
+  volume={},
+  number={},
+  pages={1378-1383},
+  doi={10.1109/ICPR.2018.8546084}}

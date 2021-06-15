@@ -1,0 +1,15 @@
+@article{JIMENEZRODRIGUEZ2020628,
+title = {Consistent Discretization of a Class of Predefined-Time Stable Systems},
+journal = {IFAC-PapersOnLine},
+volume = {53},
+number = {2},
+pages = {628-633},
+year = {2020},
+note = {21th IFAC World Congress},
+issn = {2405-8963},
+doi = {https://doi.org/10.1016/j.ifacol.2020.12.806},
+url = {https://www.sciencedirect.com/science/article/pii/S2405896320311307},
+author = {Esteban Jiménez-Rodríguez and Rodrigo Aldana-López and Juan D. Sánchez-Torres and David Gómez-Gutiérrez and Alexander G. Loukianov},
+keywords = {Predefined-time stability, Discrete-time systems, Digital implementation, Stability of nonlinear systems, Fixed-time stability},
+abstract = {As the main contribution, this document provides a consistent discretization of a class of fixed-time stable systems, namely predefined-time stable systems. In the unperturbed case, the proposed approach allows obtaining not only a consistent but exact discretization of the considered class of predefined-time stable systems, whereas in the perturbed case, the consistent discretization preserves the predefined-time stability property. All the results are validated through simulations and compared with the conventional explicit Euler scheme, highlighting the advantages of this proposal.}
+}
