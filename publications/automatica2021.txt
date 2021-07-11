@@ -1,0 +1,13 @@
+@article{ALDANALOPEZ2021109750,
+title = {EDCHO: High order exact dynamic consensus},
+journal = {Automatica},
+volume = {131},
+pages = {109750},
+year = {2021},
+issn = {0005-1098},
+doi = {https://doi.org/10.1016/j.automatica.2021.109750},
+url = {https://www.sciencedirect.com/science/article/pii/S0005109821002703},
+author = {Rodrigo Aldana-López and Rosario Aragüés and Carlos Sagüés},
+keywords = {Dynamic consensus, High order sliding modes, Multi-agent systems},
+abstract = {This article addresses the problem of average consensus in a multi-agent system when the desired consensus quantity is a time varying signal. Although this problem has been addressed in existing literature by linear schemes, only bounded steady-state errors have been achieved. Other approaches have used first order sliding modes to achieve zero steady-state error, but suffer from the chattering effect. In this work, we propose a new exact dynamic consensus algorithm which leverages high order sliding modes, in the form of a distributed differentiator to achieve zero steady-state error of the average of time varying reference signals in a group of agents. Moreover, our proposal is also able to achieve consensus to high order derivatives of the average signal, if desired. An in depth formal study on the stability and convergence for EDCHO is provided for undirected connected graphs. Finally, the effectiveness and advantages of our proposal are shown with concrete simulation scenarios.}
+}
