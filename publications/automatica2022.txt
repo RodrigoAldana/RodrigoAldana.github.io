@@ -1,0 +1,13 @@
+@article{ALDANALOPEZ2022110320,
+title = {REDCHO: Robust Exact Dynamic Consensus of High Order},
+journal = {Automatica},
+volume = {141},
+pages = {110320},
+year = {2022},
+issn = {0005-1098},
+doi = {https://doi.org/10.1016/j.automatica.2022.110320},
+url = {https://www.sciencedirect.com/science/article/pii/S0005109822001686},
+author = {Rodrigo Aldana-López and Rosario Aragüés and Carlos Sagüés},
+keywords = {Dynamic consensus, High order sliding modes, Multi-agent systems},
+abstract = {This article addresses the problem of average consensus in a multi-agent system when the desired consensus quantity is a time varying signal. Recently, the EDCHO protocol leveraged high order sliding modes to achieve exact consensus under a constrained set of initial conditions, limiting its applicability to static networks. In this work, we propose REDCHO, an extension of the previous protocol which is robust to mismatch in the initial conditions, making it suitable to use cases in which connection and disconnection of agents is possible. The convergence properties of the protocol are formally explored. Finally, the effectiveness and advantages of our proposal are shown with concrete simulation examples showing the benefits of REDCHO against other methods in the literature.}
+}
