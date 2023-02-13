@@ -1,0 +1,17 @@
+
+@Article{machines11020128,
+AUTHOR = {Perez-Salesa, Irene and Aldana-Lopez, Rodrigo and Sagues, Carlos},
+TITLE = {Precise Dynamic Consensus under Event-Triggered Communication},
+JOURNAL = {Machines},
+VOLUME = {11},
+YEAR = {2023},
+NUMBER = {2},
+ARTICLE-NUMBER = {128},
+URL = {https://www.mdpi.com/2075-1702/11/2/128},
+ISSN = {2075-1702},
+ABSTRACT = {This work addresses the problem of dynamic consensus, which consists of estimating the dynamic average of a set of time-varying signals distributed across a communication network of multiple agents. This problem has many applications in robotics, with formation control and target tracking being some of the most prominent ones. In this work, we propose a consensus algorithm to estimate the dynamic average in a distributed fashion, where discrete sampling and event-triggered communication are adopted to reduce the communication burden. Compared to other linear methods in the state of the art, our proposal can obtain exact convergence under continuous communication even when the dynamic average signal is persistently varying. Contrary to other sliding-mode approaches, our method reduces chattering in the discrete-time setting. The proposal is based on the discretization of established exact dynamic consensus results that use high-order sliding modes. The convergence of the protocol is verified through formal analysis, based on homogeneity properties, as well as through several numerical experiments. Concretely, we numerically show that an advantageous trade-off exists between the maximum steady-state consensus error and the communication rate. As a result, our proposal can outperform other state-of-the-art approaches, even when event-triggered communication is used in our protocol.},
+DOI = {10.3390/machines11020128}
+}
+
+
+

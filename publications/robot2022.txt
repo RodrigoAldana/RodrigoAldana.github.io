@@ -1,0 +1,19 @@
+@InProceedings{10.1007/978-3-031-21065-5_15,
+author="Perez-Salesa, Irene
+and Aldana-L{\'o}pez, Rodrigo
+and Sag{\"u}{\'e}s, Carlos",
+editor="Tardioli, Danilo
+and Matell{\'a}n, Vicente
+and Heredia, Guillermo
+and Silva, Manuel F.
+and Marques, Lino",
+title="Event-Based Visual Tracking in Dynamic Environments",
+booktitle="ROBOT2022: Fifth Iberian Robotics Conference",
+year="2023",
+publisher="Springer International Publishing",
+address="Cham",
+pages="175--186",
+abstract="Visual object tracking under challenging conditions of motion and light can be hindered by the capabilities of conventional cameras, prone to producing images with motion blur. Event cameras are novel sensors suited to robustly perform vision tasks under these conditions. However, due to the nature of their output, applying them to object detection and tracking is non-trivial. In this work, we propose a framework to take advantage of both event cameras and off-the-shelf deep learning for object tracking. We show that reconstructing event data into intensity frames improves the tracking performance in conditions under which conventional cameras fail to provide acceptable results.",
+isbn="978-3-031-21065-5"
+}
+
