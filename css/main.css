@@ -304,6 +304,10 @@ pre {
   width: -webkit-calc(73.2% - (4px / 2));
   width: calc(73.2% - (4px / 2)); }
 
+.col-35 {
+  width: -webkit-calc(25.1% - (4px / 2));
+  width: calc(25.1% - (4px / 2)); }
+
 .col-4 {
   width: -webkit-calc(33.33333333% - (4px / 2));
   width: calc(33.33333333% - (4px / 2)); }
@@ -354,7 +358,8 @@ pre {
   .col-11,
   .col-12,
   .col-33,
-  .col-34 {
+  .col-34,
+  .col-35 {
     width: -webkit-calc(100% - (4px / 2));
     width: calc(100% - (4px / Dynamic consensus in multi-robot systems2)); } }
 @media screen and (max-width: 600px) {
