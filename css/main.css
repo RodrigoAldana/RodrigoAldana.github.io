@@ -352,7 +352,9 @@ pre {
   .col-9,
   .col-10,
   .col-11,
-  .col-12 {
+  .col-12,
+  .col-33,
+  .col-34 {
     width: -webkit-calc(100% - (4px / 2));
     width: calc(100% - (4px / Dynamic consensus in multi-robot systems2)); } }
 @media screen and (max-width: 600px) {
