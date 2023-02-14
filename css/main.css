@@ -360,8 +360,8 @@ pre {
 @media screen and (max-width: 600px) {
   .col {
     float: none;
-    width: -webkit-calc(100% - (4px / 2));
-    width: calc(100% - (4px / 2)); } }
+    width: -webkit-calc(95% - (4px / 2));
+    width: calc(95% - (4px / 2)); } }
 /**
  * Fixed Heights
  */
