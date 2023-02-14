@@ -1,4 +1,4 @@
-@article{article,
+@article{nody2020,
 author = {Trujillo, Miguel and Aldana, Rodrigo and Gomez-Gutierrez, David and Defoort, Michael and Ruiz-Leon, Javier and Becerra, Hector M.},
 year = {2020},
 month = {12},

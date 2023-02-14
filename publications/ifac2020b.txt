@@ -1,4 +1,4 @@
-@article{JIMENEZRODRIGUEZ2020628,
+@article{ifac2020b,
 title = {Consistent Discretization of a Class of Predefined-Time Stable Systems},
 journal = {IFAC-PapersOnLine},
 volume = {53},

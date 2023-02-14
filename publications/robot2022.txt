@@ -1,4 +1,4 @@
-@InProceedings{10.1007/978-3-031-21065-5_15,
+@InProceedings{robot2022,
 author="Perez-Salesa, Irene
 and Aldana-L{\'o}pez, Rodrigo
 and Sag{\"u}{\'e}s, Carlos",

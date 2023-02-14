@@ -1,4 +1,4 @@
-@ARTICLE{9792300,
+@ARTICLE{lcss2022,
   author={Aldana-Lopez, Rodrigo and Gomez-Gutierrez, David and Aragues, Rosario and Sagues, Carlos},
   journal={IEEE Control Systems Letters}, 
   title={Dynamic Consensus With Prescribed Convergence Time for Multileader Formation Tracking}, 

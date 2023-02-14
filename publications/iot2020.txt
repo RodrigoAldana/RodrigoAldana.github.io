@@ -1,4 +1,4 @@
-@ARTICLE{8962324,
+@ARTICLE{iot2020,
   author={Valencia-Velasco, Jose and Longoria-Gandara, Omar and Aldana-Lopez, Rodrigo and Pizano-Escalante, Luis},
   journal={IEEE Internet of Things Journal}, 
   title={Low-Complexity Maximum-Likelihood Detector for IoT BLE Devices}, 

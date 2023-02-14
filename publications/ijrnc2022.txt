@@ -1,4 +1,4 @@
-@article{https://doi.org/10.1002/rnc.6315,
+@article{ijrnc2022,
 author = {Aldana-López, Rodrigo and Seeber, Richard and Gómez-Gutiérrez, David and Angulo, Marco Tulio and Defoort, Michael},
 title = {A redesign methodology generating predefined-time differentiators with bounded time-varying gains},
 journal = {International Journal of Robust and Nonlinear Control},

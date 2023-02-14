@@ -1,4 +1,4 @@
-@article{ALDANALOPEZ20202921,
+@article{ifac2020,
 title = {EDC: Exact Dynamic Consensus},
 journal = {IFAC-PapersOnLine},
 volume = {53},

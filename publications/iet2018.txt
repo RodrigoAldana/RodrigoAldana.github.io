@@ -1,4 +1,4 @@
-@article{article,
+@article{iet2018,
 author = {Jose M., Valencia and Aldana, Rodrigo and Longoria-Gandara, Omar and Pizano-Escalante, Luis},
 year = {2018},
 month = {07},

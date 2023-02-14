@@ -1,4 +1,4 @@
-@article{https://doi.org/10.1002/rnc.5536,
+@article{ijrnc2021,
 author = {Aldana-López, Rodrigo and Gómez-Gutiérrez, David and Trujillo, Miguel A. and Navarro-Gutiérrez, Manuel and Ruiz-León, Javier and Becerra, Hector M.},
 title = {A predefined-time first-order exact differentiator based on time-varying gains},
 journal = {International Journal of Robust and Nonlinear Control},

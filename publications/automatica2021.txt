@@ -1,4 +1,4 @@
-@article{ALDANALOPEZ2021109750,
+@article{automatica2021,
 title = {EDCHO: High order exact dynamic consensus},
 journal = {Automatica},
 volume = {131},

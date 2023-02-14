@@ -1,4 +1,4 @@
-@article{https://doi.org/10.1002/rnc.4715,
+@article{ijrnc2019,
 author = {Aldana-López, Rodrigo and Gómez-Gutiérrez, David and Defoort, Michael and Sánchez-Torres, Juan Diego and Muñoz-Vázquez, Aldo Jonathan},
 title = {A class of robust consensus algorithms with predefined-time convergence under switching topologies},
 journal = {International Journal of Robust and Nonlinear Control},

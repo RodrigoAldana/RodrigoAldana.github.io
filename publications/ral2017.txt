@@ -1,4 +1,4 @@
-@ARTICLE{7822897,
+@ARTICLE{ral2017,
   author={Campos-Macías, Leobardo and Gómez-Gutiérrez, David and Aldana-López, Rodrigo and de la Guardia, Rafael and Parra-Vilchis, José I.},
   journal={IEEE Robotics and Automation Letters}, 
   title={A Hybrid Method for Online Trajectory Planning of Mobile Robots in Cluttered Environments}, 

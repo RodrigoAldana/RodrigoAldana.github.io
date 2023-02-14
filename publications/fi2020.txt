@@ -1,4 +1,4 @@
-@article{ALDANALOPEZ202011880,
+@article{fi2020,
 title = {On predefined-time consensus protocols for dynamic networks},
 journal = {Journal of the Franklin Institute},
 volume = {357},

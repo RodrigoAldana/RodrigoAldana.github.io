@@ -1,4 +1,4 @@
-@article{ALDANALOPEZ2022110320,
+@article{automatica2022,
 title = {REDCHO: Robust Exact Dynamic Consensus of High Order},
 journal = {Automatica},
 volume = {141},

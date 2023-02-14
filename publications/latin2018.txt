@@ -1,4 +1,4 @@
-@INPROCEEDINGS{8613225,
+@INPROCEEDINGS{latin2018,
   author={Valencia-Velasco, Jose and Aldana-Lopez, Rodrigo and Longoria-Gandara, Omar},
   booktitle={2018 IEEE 10th Latin-American Conference on Communications (LATINCOM)}, 
   title={Alternative Viterbi Detection Metrics for GFSK Receivers: A Hardware Reduction Approach}, 

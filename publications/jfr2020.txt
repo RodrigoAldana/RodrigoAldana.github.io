@@ -1,4 +1,4 @@
-@article{https://doi.org/10.1002/rob.21959,
+@article{jfr2020,
 author = {Campos-Macías, Leobardo and Aldana-López, Rodrigo and de la Guardia, Rafael and Parra-Vilchis, José I. and Gómez-Gutiérrez, David},
 title = {Autonomous navigation of MAVs in unknown cluttered environments},
 journal = {Journal of Field Robotics},

@@ -1,5 +1,4 @@
-
-@Article{machines11020128,
+@Article{machines2023,
 AUTHOR = {Perez-Salesa, Irene and Aldana-Lopez, Rodrigo and Sagues, Carlos},
 TITLE = {Precise Dynamic Consensus under Event-Triggered Communication},
 JOURNAL = {Machines},

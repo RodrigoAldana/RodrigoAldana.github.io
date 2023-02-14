@@ -1,4 +1,4 @@
-@article{https://doi.org/10.1002/rnc.4600,
+@article{ijrnc2019b,
 author = {Aldana-López, Rodrigo and Gómez-Gutiérrez, David and Jiménez-Rodríguez, Esteban and Sánchez-Torres, Juan Diego and Defoort, Michael},
 title = {Enhancing the settling time estimation of a class of fixed-time stable systems},
 journal = {International Journal of Robust and Nonlinear Control},
