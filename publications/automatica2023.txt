@@ -1,0 +1,13 @@
+@article{GOMEZGUTIERREZ2023110995,
+title = {An arbitrary-order exact differentiator with predefined convergence time bound for signals with exponential growth bound},
+journal = {Automatica},
+volume = {153},
+pages = {110995},
+year = {2023},
+issn = {0005-1098},
+doi = {https://doi.org/10.1016/j.automatica.2023.110995},
+url = {https://www.sciencedirect.com/science/article/pii/S0005109823001486},
+author = {David Gómez-Gutiérrez and Rodrigo Aldana-López and Richard Seeber and Marco Tulio Angulo and Leonid Fridman},
+keywords = {Fixed-time stability, Predefined-time, Prescribed-time, Unknown input observers, Online differentiators},
+abstract = {There is a growing interest in differentiation algorithms that converge in fixed time with a predefined Upper Bound on the Settling Time (UBST). However, existing differentiation algorithms are limited to signals having an nth order Lipschitz derivative. Here, we introduce a general methodology based on time-varying gains to circumvent this limitation, allowing us to design nth order differentiators with a predefined UBST for the broader class of signals whose (n+1)th derivative is bounded by a function with bounded logarithmic derivative. Unlike existing methods whose time-varying gain tends to infinity, our approach yields a time-varying gain that remains bounded at the convergence time. We show how this last property maintains exact convergence using bounded gains when considering a compact set of initial conditions and improves the algorithm’s performance under measurement noise.}
+}
