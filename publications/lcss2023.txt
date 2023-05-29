@@ -1,0 +1,9 @@
+@ARTICLE{lcss2023,
+  author={Aldana-López, Rodrigo and Sebastián, Eduardo and Aragüés, Rosario and Montijano, Eduardo and Sagüés, Carlos},
+  journal={IEEE Control Systems Letters}, 
+  title={Distributed outer approximation of the intersection of ellipsoids}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={1-1},
+  doi={10.1109/LCSYS.2023.3280259}}
