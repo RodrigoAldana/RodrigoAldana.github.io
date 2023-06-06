@@ -1,0 +1,12 @@
+@article{ALDANALOPEZ2023101857,
+title = {Perception-latency aware distributed target tracking},
+journal = {Information Fusion},
+pages = {101857},
+year = {2023},
+issn = {1566-2535},
+doi = {https://doi.org/10.1016/j.inffus.2023.101857},
+url = {https://www.sciencedirect.com/science/article/pii/S1566253523001732},
+author = {Rodrigo Aldana-López and Rosario Aragüés and Carlos Sagüés},
+keywords = {Perception-latency, Target tracking, Mobile robot, Estimation fusion},
+abstract = {This work is devoted to the problem of distributed target tracking when a team of robots detect the target through a variable perception-latency mechanism. A reference for the robots to track is constructed in terms of a desired formation around the estimation of the target position. However, it is noted that due to the perception-latency, classical estimation techniques have smoothness issues which prevent asymptotic stability for the formation control. We propose a near-optimal smooth-output estimator which circumvents this issue. Moreover, local estimations are fused using novel dynamic consensus techniques. The advantages of the proposal as well as a comparison with a non-smooth optimal alternative are discussed through simulation examples.}
+}
