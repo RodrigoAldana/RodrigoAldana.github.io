@@ -1,4 +1,4 @@
-@article{ALDANALOPEZ2023111123,
+@article{automatica2023b,
 title = {Latency vs precision: Stability preserving perception scheduling},
 journal = {Automatica},
 volume = {155},
