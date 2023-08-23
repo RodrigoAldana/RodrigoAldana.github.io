@@ -1,4 +1,4 @@
-@article{ALDANALOPEZ2023,
+@article{isa2023,
 title = {PLATE: A perception-latency aware estimator},
 journal = {ISA Transactions},
 year = {2023},
