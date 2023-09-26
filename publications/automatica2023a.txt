@@ -1,4 +1,4 @@
-@article{ALDANALOPEZ2023111284,
+@article{automatica2023a,
 title = {On inherent limitations in robustness and performance for a class of prescribed-time algorithms},
 journal = {Automatica},
 volume = {158},
