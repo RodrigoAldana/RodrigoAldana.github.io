@@ -1,0 +1,15 @@
+@article{HAIMOVICH20231621,
+title = {Implementing prescribed-time convergent control: sampling and robustness},
+journal = {IFAC-PapersOnLine},
+volume = {56},
+number = {2},
+pages = {1621-1626},
+year = {2023},
+note = {22nd IFAC World Congress},
+issn = {2405-8963},
+doi = {https://doi.org/10.1016/j.ifacol.2023.10.1864},
+url = {https://www.sciencedirect.com/science/article/pii/S2405896323022735},
+author = {Hernan Haimovich and Rodrigo Aldana-Lopez and Richard Seeber and David Gomez-Gutierrez},
+keywords = {Prescribed-time, finite-time, fixed-time, convergence, sampling},
+abstract = {According to recent results, convergence in a prespecified or prescribed finite time can be achieved under extreme model uncertainty if control is applied continuously over time. This paper shows that this extreme amount of uncertainty cannot be tolerated under sampling, not even if sampling could become infinitely frequent as the deadline is approached, unless the sampling strategy were designed according to the growth of the control action. Robustness under model uncertainty is analyzed and the amount of uncertainty that can be tolerated under sampling is quantified in order to formulate the least restrictive prescribed-time control problem that is practically implementable. Some solutions to this problem are given for a scalar system. Moreover, either under a-priori knowledge of bounds for initial conditions, or if the strategy can be selected after the first measurement becomes available, it is shown that the real, practically achievable objectives can also be reached with linear time-invariant control and uniform sampling. These derivations serve to yield insight into the real advantages that implementation of prescribed-time controllers may have.}
+}

@@ -1,0 +1,15 @@
+@article{DEVILLEROS202343,
+title = {Distributed predefined-time optimization in formation control under switching topologies},
+journal = {IFAC-PapersOnLine},
+volume = {56},
+number = {2},
+pages = {43-48},
+year = {2023},
+note = {22nd IFAC World Congress},
+issn = {2405-8963},
+doi = {https://doi.org/10.1016/j.ifacol.2023.10.1389},
+url = {https://www.sciencedirect.com/science/article/pii/S2405896323017962},
+author = {P. {De Villeros} and R. Aldana-López and J.D. Sánchez-Torres and M. Defoort and M. Djemai and A. Loukianov},
+keywords = {Distributed optimization, Multi-agent systems, predefined-time stability, Fixed-time stability, Formation control},
+abstract = {This paper presents a novel distributed zero-gradient-sum algorithm for addressing the formation control problem by minimizing the sum of strongly convex functions under switching topologies in first-order multi-agent systems. The main contribution of this work is the development of a two-step controller that allows agents to achieve leaderless formation and reach the global function's minimizer within a predefined time while maintaining the privacy of local objective functions, gradients and Hessians. The proposed algorithm exhibits a unique combination of features, including predefined-time stability, applicability to multi-valued strongly-convex functions, independence from initial conditions and adaptability to switching topologies without the need to know the number of agents. Furthermore, the algorithm avoids the use of auxiliary variables and time-variable gains. This work also provides numerical simulations to demonstrate the effectiveness and validity of the proposed algorithm.}
+}

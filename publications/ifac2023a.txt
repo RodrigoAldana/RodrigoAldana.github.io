@@ -1,0 +1,15 @@
+@article{PEREZSALESA20235993,
+title = {Event-Triggered Consensus for Continuous-Time Distributed Estimation},
+journal = {IFAC-PapersOnLine},
+volume = {56},
+number = {2},
+pages = {5993-5998},
+year = {2023},
+note = {22nd IFAC World Congress},
+issn = {2405-8963},
+doi = {https://doi.org/10.1016/j.ifacol.2023.10.641},
+url = {https://www.sciencedirect.com/science/article/pii/S2405896323010157},
+author = {Irene Perez-Salesa and Rodrigo Aldana-Lopez and Carlos Sagues},
+keywords = {Estimation and filtering, sensor networks, distributed estimation, dynamic consensus, event-triggered communication, information and sensor fusion, stochastic systems},
+abstract = {Distributed sensor networks have gained interest thanks to the developments in processing power and communications. Event-triggering mechanisms can be useful in reducing communication between the nodes of the network, while still ensuring an adequate behaviour of the system. However, very little attention has been given to continuous-time systems in this context. In this work, we propose a strategy for distributed state estimation in sensor networks, based on average dynamic consensus of the continuous measurements. While communication between nodes is discrete and heavily reduced due to the event-triggering mechanism, our method ensures that the nodes are still able to produce a continuous estimate of the global average measurement and the state of the plant, within some tuneable error bounds.}
+}

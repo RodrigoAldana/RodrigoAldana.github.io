@@ -1,0 +1,20 @@
+@Inbook{Aldana-López2023,
+author="Aldana-L{\'o}pez, Rodrigo
+and Seeber, Richard
+and Haimovich, Hernan
+and G{\'o}mez-Guti{\'e}rrez, David",
+editor="Oliveira, Tiago Roux
+and Fridman, Leonid
+and Hsu, Liu",
+title="Designing Controllers with Predefined Convergence-Time Bound Using Bounded Time-Varying Gains",
+bookTitle="Sliding-Mode Control and Variable-Structure Systems: The State of the Art",
+year="2023",
+publisher="Springer International Publishing",
+address="Cham",
+pages="37--67",
+abstract="Recently, there has been a great deal of attention in a class of controllers based on time-varying gains, called prescribed-time controllers, that steer the system's state to the origin in the desired time, a priori set by the user, regardless of the initial condition. Furthermore, such a class of controllers has been shown to maintain a prescribed-time convergence in the presence of disturbances even if the disturbance bound is unknown. However, such properties require a time-varying gain that becomes singular at the terminal time, which limits its application to scenarios under quantization or measurement noise. This chapter presents a methodology to design a broader class of controllers, called predefined-time controllers, with a prescribed convergence-time bound. Our approach allows designing robust predefined-time controllers based on time-varying gains while maintaining uniformly bounded time-varying gains. We analyze the condition for uniform Lyapunov stability under the proposed time-varying controllers.",
+isbn="978-3-031-37089-2",
+doi="10.1007/978-3-031-37089-2_3",
+url="https://doi.org/10.1007/978-3-031-37089-2_3"
+}
+

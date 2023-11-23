@@ -1,0 +1,15 @@
+@article{ALDANALOPEZ20232038,
+title = {Distributed differentiation with noisy measurements for exact dynamic consensus},
+journal = {IFAC-PapersOnLine},
+volume = {56},
+number = {2},
+pages = {2038-2043},
+year = {2023},
+note = {22nd IFAC World Congress},
+issn = {2405-8963},
+doi = {https://doi.org/10.1016/j.ifacol.2023.10.1101},
+url = {https://www.sciencedirect.com/science/article/pii/S2405896323015045},
+author = {Rodrigo Aldana-López and Rosario Aragüés and Carlos Sagüés},
+keywords = {Consensus, Multi-agent systems, Sensor networks},
+abstract = {This work is devoted to a dynamic consensus problem referred here as distributed differentiation, which consists on estimating high order derivatives of the average of a group of signals in a decentralized fashion. To do so, a distributed differentiation protocol is proposed which solves the problem with exact convergence in the noiseless case. Moreover, the protocol allows to compute weighted averages according to quality or noise levels of individual signals. Different from previous approaches, our proposal no longer requires additional local differentiators. In addition, we provide a detailed formal analysis of the performance of the protocol under noisy measurements. Simulation examples are provided to show the effectiveness of our proposal.}
+}
