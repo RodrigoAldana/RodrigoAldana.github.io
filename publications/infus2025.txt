@@ -1,0 +1,13 @@
+@article{PEREZSALESA2025102783,
+title = {ODEFTC: Optimal Distributed Estimation based on Fixed-Time Consensus},
+journal = {Information Fusion},
+volume = {116},
+pages = {102783},
+year = {2025},
+issn = {1566-2535},
+doi = {https://doi.org/10.1016/j.inffus.2024.102783},
+url = {https://www.sciencedirect.com/science/article/pii/S156625352400561X},
+author = {Irene Perez-Salesa and Rodrigo Aldana-López and Carlos Sagüés},
+keywords = {Distributed state estimation, Sensor networks, Multi-agent systems, Fixed-time consensus, Continuous-time stochastic systems},
+abstract = {Distributed state estimation has been a significant research topic in recent years due to its applications for multi-robot and large-scale systems. Several approaches have been proposed in the context of continuous-time systems with stochastic noise, with limitations regarding observability, assumptions on the noise bounds, or requirements to pre-compute auxiliary global information offline. Moreover, many of these approaches are suboptimal with respect to a centralized implementation, and optimal proposals only apply to time-invariant systems. The present work proposes the ODEFTC algorithm for distributed state estimation based on fixed-time consensus. The proposal computes state estimates and corresponding covariance matrices online, making it suitable for time-variant systems. We verify the stability of the proposal through formal analysis, and we show that the optimal centralized solution, given by the Kalman-Bucy filter, can be recovered asymptotically. Additionally, we provide numerical results and an in-depth statistical and numerical discussion to show the advantages of our proposal against other approaches in the literature.}
+}

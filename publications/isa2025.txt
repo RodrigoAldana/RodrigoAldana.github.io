@@ -1,0 +1,13 @@
+@article{ALDANALOPEZ2025503,
+title = {Quasi-exact dynamic average consensus under asynchronous communication and symmetric delays},
+journal = {ISA Transactions},
+volume = {167},
+pages = {503-512},
+year = {2025},
+issn = {0019-0578},
+doi = {https://doi.org/10.1016/j.isatra.2025.08.011},
+url = {https://www.sciencedirect.com/science/article/pii/S0019057825004409},
+author = {Rodrigo Aldana-López and Rosario Aragüés and Carlos Sagüés},
+keywords = {Dynamic average consensus, Dynamic average tracking, Asynchronous communication, Symmetric delays, Sliding-modes},
+abstract = {This work focuses on the problem of dynamic average consensus, which involves computing the average of a set of time-varying reference signals spread across a network in a distributed fashion. To make this problem more applicable to realistic scenarios, we consider agents in the network that can only communicate at asynchronous discrete-time instants and are subject to time-varying symmetric edge-wise delays. Our proposal is based on high-order sliding modes. It is quasi-exact in the sense that exact convergence to the average signal is obtained when continuous-time communication is available, even if the dynamic average is persistently varying. Additionally, under asynchronous discrete-time communication, our proposal exhibits reduced chattering and improved robustness compared to other approaches. We provide a formal analysis of the algorithm’s convergence and present several numerical experiments to verify the advantages of our proposal.}
+}

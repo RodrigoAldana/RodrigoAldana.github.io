@@ -1,0 +1,14 @@
+@article{DEVILLEROS2024106988,
+title = {Robust fixed-time distributed optimization with predefined convergence-time bound},
+journal = {Journal of the Franklin Institute},
+volume = {361},
+number = {13},
+pages = {106988},
+year = {2024},
+issn = {0016-0032},
+doi = {https://doi.org/10.1016/j.jfranklin.2024.106988},
+url = {https://www.sciencedirect.com/science/article/pii/S0016003224004095},
+author = {P. {De Villeros} and R. Aldana-López and J.D. Sánchez-Torres and M. Defoort and A.G. Loukianov},
+keywords = {Distributed optimization, Multi-agent systems, Fixed-time stability, Formation control, Switching networks, Sliding modes},
+abstract = {This paper introduces a distributed optimization scheme for achieving formation control in multi-agent systems operating under switching networks and external disturbances. The proposed approach utilizes the zero-gradient sum property and consists of two steps. First, it guides each agent towards the minimizer of its respective local cost function. Subsequently, it achieves a formation around the minimizer of the global cost function. The distributed optimization scheme guarantees convergence before a predefined time, even under simultaneous switching networks and external disturbances, distinguishing it from existing finite and fixed-time schemes. Moreover, the algorithm eliminates the need for agents to exchange local gradients or Hessians of the cost functions or even prior knowledge of the number of agents in the network. Additionally, the proposed scheme copes with external disturbances using integral sliding modes. The scheme’s effectiveness is validated through an application to distributed source localization, for which several numerical results are provided.}
+}

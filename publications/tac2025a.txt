@@ -1,0 +1,10 @@
+@ARTICLE{10879361,
+  author={Sebastián, Eduardo and Aldana-López, Rodrigo and Aragüés, Rosario and Montijano, Eduardo and Sagüés, Carlos},
+  journal={IEEE Transactions on Automatic Control}, 
+  title={Distributed Discrete-Time Dynamic Outer Approximation of the Intersection of Ellipsoids}, 
+  year={2025},
+  volume={70},
+  number={7},
+  pages={4809-4816},
+  keywords={Ellipsoids;Optimization;Heuristic algorithms;Linear programming;Approximation algorithms;Kalman filters;Estimation;Symmetric matrices;Covariance matrices;Robustness;Consensus;discrete time systems;distributed optimization;ellipsoidal methods},
+  doi={10.1109/TAC.2025.3540423}}

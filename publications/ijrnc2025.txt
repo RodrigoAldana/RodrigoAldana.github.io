@@ -1,0 +1,15 @@
+@article{https://doi.org/10.1002/rnc.7901,
+author = {Aldana-López, Rodrigo and Gómez-Gutiérrez, David and Usai, Elio and Haimovich, Hernan},
+title = {Exact Leader Estimation: A New Approach for Distributed Differentiation},
+journal = {International Journal of Robust and Nonlinear Control},
+volume = {35},
+number = {10},
+pages = {4265-4278},
+keywords = {distributed differentiation, distributed leader-observer, sampled-data},
+doi = {https://doi.org/10.1002/rnc.7901},
+url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/rnc.7901},
+eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1002/rnc.7901},
+abstract = {ABSTRACT A novel strategy aimed at cooperatively differentiating a signal among multiple interacting agents is introduced, where none of the agents needs to know which agent is the leader, i.e., the one producing the signal to be differentiated. Every agent communicates only a scalar variable to its neighbors; except for the leader, all agents execute the same algorithm. The proposed strategy can effectively obtain derivatives up to arbitrary \$\$ m\mathrm{th} \$\$ order in a finite-time under the assumption that the \$\$ \left(m+1\right)\mathrm{th} \$\$ derivative is bounded. The strategy borrows some of its structure from the celebrated homogeneous robust exact differentiator by A. Levant, inheriting its exact differentiation capability and robustness to measurement noise. Hence, the proposed strategy can be said to perform robust exact distributed differentiation. In addition, and for the first-time in the distributed leader-observer literature, sampled-data communication and bounded measurement noise are considered, and corresponding steady-state worst-case accuracy bounds are derived. The effectiveness of the proposed strategy is verified numerically for second- and fourth-order systems, i.e., for estimating derivatives of up to first- and third-order, respectively.},
+year = {2025}
+}
+

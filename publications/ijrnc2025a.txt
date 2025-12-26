@@ -1,0 +1,14 @@
+@article{https://doi.org/10.1002/rnc.70308,
+author = {Aldana-López, Rodrigo and Aranda, Miguel and Aragüés, Rosario and Sagüés, Carlos},
+title = {Homogeneous Observer-Based Affine Formation Tracking},
+journal = {International Journal of Robust and Nonlinear Control},
+volume = {n/a},
+number = {n/a},
+pages = {},
+keywords = {distributed estimation, multi-agent formation control, sliding mode algorithms},
+doi = {https://doi.org/10.1002/rnc.70308},
+url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/rnc.70308},
+eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1002/rnc.70308},
+abstract = {ABSTRACT This article addresses the control of mobile agents, termed followers, to track a time-varying affine formation specified by a set of leaders. We present a distributed hierarchical method composed of a homogeneous high-order sliding mode observer and a tracking controller. The observer estimates the followers' target trajectories from neighbor information in finite time and is robust to measurement noise. Compared to existing approaches, the method accommodates heterogeneous follower dynamics, maintains estimation accuracy independently of follower motion, and mitigates chattering effects. Convergence is guaranteed for both continuous- and discrete-time implementations, which are supported by formal analysis and numerical simulations.}
+}
+

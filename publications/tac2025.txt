@@ -1,0 +1,10 @@
+@ARTICLE{10943119,
+  author={Aldana-López, Rodrigo and Seeber, Richard and Haimovich, Hernan and Gómez-Gutiérrez, David},
+  journal={IEEE Transactions on Automatic Control}, 
+  title={Optimal Robust Exact First-Order Differentiators With Lipschitz-Continuous Output}, 
+  year={2025},
+  volume={70},
+  number={9},
+  pages={6191-6198},
+  keywords={Noise;Accuracy;Convergence;Robustness;Noise measurement;Tuning;Fault diagnosis;Doppler effect;Vibrations;Upper bound;Differentiators;discrete-time implementation;optimal worst-case error;sliding-mode filters},
+  doi={10.1109/TAC.2025.3555481}}

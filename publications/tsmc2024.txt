@@ -1,0 +1,10 @@
+@ARTICLE{10704710,
+  author={Perez-Salesa, Irene and Aldana-López, Rodrigo and Sagüés, Carlos},
+  journal={IEEE Transactions on Systems, Man, and Cybernetics: Systems}, 
+  title={Bounding Uncertainty in State Estimation Under Dynamic Event-Triggered Communication}, 
+  year={2025},
+  volume={55},
+  number={1},
+  pages={209-220},
+  keywords={Uncertainty;Stochastic processes;Measurement uncertainty;State estimation;Noise measurement;Noise;Monitoring;Current measurement;Covariance matrices;Proposals;Estimation and filtering;event-triggered communication;remote state estimation;stochastic systems},
+  doi={10.1109/TSMC.2024.3465232}}
