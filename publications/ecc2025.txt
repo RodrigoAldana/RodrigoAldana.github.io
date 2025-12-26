@@ -1,0 +1,10 @@
+@INPROCEEDINGS{11187206,
+  author={Perez-Salesa, Irene and Aldana-López, Rodrigo and Sagüés, Carlos},
+  booktitle={2025 European Control Conference (ECC)}, 
+  title={Distributed LQG Control under Event-Triggered Communication*}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={1439-1444},
+  keywords={Actuators;Costs;Event detection;Europe;Proposals;Communication networks},
+  doi={10.23919/ECC65951.2025.11187206}}
