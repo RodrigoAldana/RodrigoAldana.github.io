@@ -1,0 +1,10 @@
+@ARTICLE{10266844,
+  author={Aldana-López, Rodrigo and Valencia-Velasco, Jose and Longoria-Gandara, Omar and Vázquez-Castillo, Javier and Pizano-Escalante, Luis},
+  journal={IEEE Internet of Things Journal}, 
+  title={Efficient Optimal Linear Estimation for CPM: An Information Fusion Approach}, 
+  year={2024},
+  volume={11},
+  number={5},
+  pages={8427-8439},
+  keywords={Internet of Things;Receivers;Symbols;Precoding;Hidden Markov models;Hardware;Maximum likelihood estimation;Continuous phase modulation (CPM);demodulation;information fusion;linear complexity;optimal receivers},
+  doi={10.1109/JIOT.2023.3320518}}
