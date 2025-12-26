@@ -1,0 +1,17 @@
+
+@Article{iot7010002,
+AUTHOR = {Aldana-López, Rodrigo and Longoria-Gandara, Omar and Valencia-Velasco, Jose and Vázquez-Castillo, Javier and Pizano-Escalante, Luis},
+TITLE = {Orthogonal Space-Time Bluetooth System for IoT Communications},
+JOURNAL = {IoT},
+VOLUME = {7},
+YEAR = {2026},
+NUMBER = {1},
+ARTICLE-NUMBER = {2},
+URL = {https://www.mdpi.com/2624-831X/7/1/2},
+ISSN = {2624-831X},
+ABSTRACT = {There is increasing interest in improving the reliability of short-range wireless links in dense IoT deployments, where BLE is widely used due to its low power consumption and robust GFSK modulation. For this purpose, this work presents a novel Orthogonal Space-Time (OST) scheme for transmission and detection of BLE signals while preserving the BLE GFSK waveform and modulation constraints. The proposed signal processing system integrates advanced OST coding techniques with nonlinear GFSK modulation to achieve high-quality communication while maintaining phase continuity. This implies that the standard BLE GFSK modulator and demodulator blocks can be reused, with additional processing introduced only in the multi-antenna encoder and combiner. A detailed theoretical analysis demonstrates the feasibility of employing the Rayleigh fading channel model in BLE communications and establishes the BER performance bounds for various MIMO configurations. Simulations confirm the advantages of the proposed OST-GFSK signal processing scheme, maintaining a consistent performance when compared with OST linear modulation approaches under Rayleigh fading channels. As a result, the proposed IoT-enabling technology integrates the advantages of widely used OST linear modulation with nonlinear GFSK modulation required for BLE.},
+DOI = {10.3390/iot7010002}
+}
+
+
+
