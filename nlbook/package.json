@@ -1,0 +1,12 @@
+{
+  "name": "lyapunov_interactive",
+  "private": true,
+  "version": "0.0.1",
+  "scripts": {
+    "build": "make build",
+    "serve": "node ./node_modules/serve/build/main.js . -l 8080"
+  },
+  "dependencies": {
+    "serve": "^14.2.1"
+  }
+}

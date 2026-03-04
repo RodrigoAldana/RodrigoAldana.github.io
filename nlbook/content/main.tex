@@ -1,0 +1,163 @@
+\input{content/macros.tex}
+
+\chapter{Lyapunov Stability}
+
+
+Stability theory plays a central role in systems theory and engineering. There are different kinds of stability problems that arise in the study of dynamical systems. This chapter is concerned mainly with stability of equilibrium points. In later chapters, we shall see other kinds of stability, such as input–output stability and stability of periodic orbits. Stability of equilibrium points is usually characterized in the sense of Lyapunov, a Russian mathematician and engineer who laid the foundation of the theory, which now carries his name. An equilibrium point is stable if all solutions starting at nearby points stay nearby; otherwise, it is unstable. It is asymptotically stable if all solutions starting at nearby points not only stay nearby, but also tend to the equilibrium point as time approaches infinity. These notions are made precise in Section 4.1, where the basic theorems of Lyapunov’s method for autonomous systems are given. An extension of the basic theory, due to LaSalle, is given in Section 4.2. For a linear time-invariant system $\dot{x}(t) = Ax(t)$, the stability of the equilibrium point $x = 0$ can be completely characterized by the location of the eigenvalues of $A$. This is discussed in Section 4.3. In the same section, it is shown when and how the stability of an equilibrium point can be determined by linearization about that point. In Section 4.4, we introduce class $\mathcal{K}$ and class $\mathcal{KL}$ functions, which are used extensively in the rest of the chapter, and indeed the rest of the book. In Sections 4.5 and 4.6, we extend Lyapunov’s method to nonautonomous systems. In Section 4.5, we define the concepts of uniform stability, uniform asymptotic stability, and exponential stability for nonautonomous systems, and give Lyapunov’s method for testing them. In Section 4.6, we study linear time-varying systems and linearization.
+
+Lyapunov stability theorems give sufficient conditions for stability, asymptotic stability, and so on. They do not say whether the given conditions are also necessary. There are theorems which establish, at least conceptually, that for many of Lyapunov stability theorems, the given conditions are indeed necessary. Such theorems are usually called converse theorems. We present three converse theorems in Section 4.7. Moreover, we use the converse theorem for exponential stability to show that an equilibrium point of a nonlinear system is exponentially stable if and only if the linearization of the system about that point has an exponentially stable equilibrium at the origin.
+
+Lyapunov stability analysis can be used to show boundedness of the solution, even when the system has no equilibrium points. This is shown in Section 4.8 where the notions of uniform boundedness and ultimate boundedness are introduced. Finally, in Section 4.9, we introduce the notion of input-to-state stability, which provides a natural extension of Lyapunov stability to systems with inputs.
+
+\section{Autonomous Systems}
+
+Consider the autonomous system
+\begin{equation}
+\dot{x} = f(x)
+\tag{4.1}
+\end{equation}
+where $f : D \to \mathbb{R}^n$ is a locally Lipschitz map from a domain $D \subset \mathbb{R}^n$ into $\mathbb{R}^n$. Suppose $\bar{x} \in D$ is an equilibrium point of (4.1); that is, $f(\bar{x}) = 0$. Our goal is to characterize and study the stability of $\bar{x}$. For convenience, we state all definitions and theorems for the case when the equilibrium point is at the origin of $\mathbb{R}^n$; that is, $\bar{x} = 0$. There is no loss of generality in doing so because any equilibrium point can be shifted to the origin via a change of variables. Suppose $\bar{x} \neq 0$ and consider the change of variables $y = x - \bar{x}$. The derivative of $y$ is given by
+\[
+\dot{y} = \dot{x} = f(x) = f(y + \bar{x}) \stackrel{\text{def}}{=} g(y),
+\]
+where $g(0) = 0$.
+
+In the new variable $y$, the system has equilibrium at the origin. Therefore, without loss of generality, we will always assume that $f(x)$ satisfies $f(0) = 0$ and study the stability of the origin $x = 0$.
+
+\medskip
+
+\noindent
+\click{def41}{Definition 4.1} The equilibrium point $x = 0$ of (4.1) is
+\begin{itemize}
+\item \emph{stable} if, for each $\varepsilon > 0$, there is $\delta = \delta(\varepsilon) > 0$ such that
+\[
+\|x(0)\| < \delta \Rightarrow \|x(t)\| < \varepsilon, \quad \forall t \ge 0
+\]
+\item \emph{unstable} if it is not stable.
+\item \emph{asymptotically stable} if it is stable and $\delta$ can be chosen such that
+\[
+\|x(0)\| < \delta \Rightarrow \lim_{t \to \infty} x(t) = 0
+\]
+\end{itemize}
+
+The $\varepsilon$–$\delta$ requirement for stability takes a challenge–answer form. To demonstrate that the origin is stable, then, for any value of $\varepsilon$ that a challenger may care to designate, we must produce a value of $\delta$, possibly dependent on $\varepsilon$, such that a trajectory starting in a $\delta$ neighborhood of the origin will never leave the $\varepsilon$ neighborhood. The three types of stability properties can be illustrated by the pendulum example of Section 1.2.1.
+
+\click{pendulum}{The pendulum equation}
+\[
+\dot{x}_1 = x_2
+\]
+\[
+\dot{x}_2 = - a \sin x_1 - b x_2
+\]
+has two equilibrium points at $(x_1 = 0, x_2 = 0)$ and $(x_1 = \pi, x_2 = 0)$. Neglecting friction, by setting $b = 0$, we have seen in Chapter 2 (Figure 2.2) that trajectories in the neighborhood of the first equilibrium are closed orbits. Therefore, by starting sufficiently close to the equilibrium point, trajectories can be guaranteed to stay within any specified ball centered at the equilibrium point. Hence, the $\varepsilon$–$\delta$ requirement for stability is satisfied. The equilibrium point, however, is not asymptotically stable since trajectories starting off the equilibrium point do not tend to it eventually. Instead, they remain in their closed orbits. When friction is taken into consideration ($b > 0$), the equilibrium point at the origin becomes a stable focus. Inspection of the phase portrait of a stable focus shows that the $\varepsilon$–$\delta$ requirement for stability is satisfied. In addition, trajectories starting close to the equilibrium point tend to it as $t$ tends to infinity. The second equilibrium point at $x_1 = \pi$ is a saddle point. Clearly the $\varepsilon$–$\delta$ requirement cannot be satisfied since, for any $\varepsilon > 0$, there is always a trajectory that will leave the ball $\{ x \in \mathbb{R}^n \mid \|x - \bar{x}\| \le \varepsilon \}$ even when $x(0)$ is arbitrarily close to the equilibrium point $\bar{x}$.
+
+Implicit in Definition 4.1 is a requirement that solutions of (4.1) be defined for all $t \ge 0$.\footnote{It is possible to change the definition to alleviate the implication of global existence of the solution. In [15], stability is defined on the maximal interval of existence $[0,t_1)$, without assuming that $t_1 = \infty$.} Such global existence of the solution is not guaranteed by the local Lipschitz property of $f$. It will be shown, however, that the additional conditions needed in Lyapunov’s theorem will ensure global existence of the solution. This will come as an application of Theorem 3.3.
+
+Having defined stability and asymptotic stability of equilibrium points, our task now is to find ways to determine stability. The approach we used in the pendulum example relied on our knowledge of the phase portrait of the pendulum equation. Trying to generalize that approach amounts to actually finding all solutions of (4.1), which may be difficult or even impossible. However, the conclusions we reached about the stable equilibrium point of the pendulum can also be reached by using energy concepts. Let us define the energy of the pendulum $E(x)$ as the sum of its potential and kinetic energies, with the reference of the potential energy chosen such that $E(0) = 0$; that is,
+\[
+E(x) = \int_0^{x_1} a \sin y \, dy + \frac{1}{2} x_2^2
+= a(1 - \cos x_1) + \frac{1}{2} x_2^2
+\]
+
+When friction is neglected ($b = 0$), the system is conservative; that is, there is no dissipation of energy. Hence, $E =$ constant during the motion of the system or, in other words, $dE/dt = 0$ along the trajectories of the system. Since $E(x) = c$ forms a closed contour around $x = 0$ for small $c$, we can again arrive at the conclusion that $x = 0$ is a stable equilibrium point. When friction is accounted for ($b > 0$), energy will dissipate during the motion of the system, that is, $dE/dt \le 0$ along the trajectories of the system. Due to friction, $E$ cannot remain constant indefinitely while the system is in motion. Hence, it keeps decreasing until it eventually reaches zero, showing that the trajectory tends to $x = 0$ as $t$ tends to infinity. Thus, by examining the derivative of $E$ along the trajectories of the system, it is possible to determine the stability of the equilibrium point. In 1892, Lyapunov showed that certain other functions could be used instead of energy to determine stability of an equilibrium point. Let $V : D \to \mathbb{R}$ be a continuously differentiable function defined in a domain $D \subset \mathbb{R}^n$ that contains the origin. The derivative of $V$ along the trajectories of (4.1), denoted by $\dot{V}(x)$, is given by
+\[
+\dot{V}(x)
+= \sum_{i=1}^{n} \frac{\partial V}{\partial x_i} \dot{x}_i
+= \sum_{i=1}^{n} \frac{\partial V}{\partial x_i} f_i(x)
+= 
+\begin{bmatrix}
+\frac{\partial V}{\partial x_1} &
+\frac{\partial V}{\partial x_2} &
+\cdots &
+\frac{\partial V}{\partial x_n}
+\end{bmatrix}
+\begin{bmatrix}
+f_1(x) \\ f_2(x) \\ \vdots \\ f_n(x)
+\end{bmatrix}
+= \frac{\partial V}{\partial x} f(x)
+\]
+
+The derivative of $V$ along the trajectories of a system is dependent on the system’s equation. Hence, $\dot{V}(x)$ will be different for different systems. If $\phi(t;x)$ is the solution of (4.1) that starts at initial state $x$ at time $t = 0$, then
+\[
+\dot{V}(x) = \left. \frac{d}{dt} V(\phi(t;x)) \right|_{t=0}
+\]
+
+Therefore, if $\dot{V}(x)$ is negative, $V$ will decrease along the solution of (4.1). We are now ready to state Lyapunov’s stability theorem.
+
+\medskip
+
+\noindent
+\textbf{Theorem 4.1} Let $x = 0$ be an equilibrium point for (4.1) and $D \subset \mathbb{R}^n$ be a domain containing $x = 0$. Let $V : D \to \mathbb{R}$ be a continuously differentiable function such that
+\begin{equation}
+V(0) = 0 \quad \text{and} \quad V(x) > 0 \text{ in } D - \{0\}
+\tag{4.2}
+\end{equation}
+\begin{equation}
+\dot{V}(x) \le 0 \quad \text{in } D
+\tag{4.3}
+\end{equation}
+Then, $x = 0$ is stable. Moreover, if
+\begin{equation}
+\dot{V}(x) < 0 \text{ in } D - \{0\}
+\tag{4.4}
+\end{equation}
+then $x = 0$ is asymptotically stable.
+\hfill $\diamond$
+
+\medskip
+
+\noindent
+\textbf{Proof:}
+Given $\varepsilon > 0$, choose $r \in (0,\varepsilon]$ such that
+\[
+B_r = \{ x \in \mathbb{R}^n \mid \|x\| \le r \} \subset D
+\]
+Let $\alpha = \min_{\|x\|=r} V(x)$. Then, $\alpha > 0$ by (4.2). Take $\beta \in (0,\alpha)$ and let
+\[
+\Omega_\beta = \{ x \in B_r \mid V(x) \le \beta \}
+\]
+
+Then, $\Omega_\beta$ is in the interior of $B_r$.\footnote{This fact can be shown by contradiction. Suppose $\Omega_\beta$ is not in the interior of $B_r$, then there is a point $p \in \Omega_\beta$ that lies on the boundary of $B_r$. At this point, $V(p) \ge \alpha > \beta$, but for all $x \in \Omega_\beta$, $V(x) \le \beta$, which is a contradiction.} The set $\Omega_\beta$ has the property that any trajectory starting in $\Omega_\beta$ at $t = 0$ stays in $\Omega_\beta$ for all $t \ge 0$. This follows from (4.3) since
+\[
+\dot{V}(x(t)) \le 0 \Rightarrow V(x(t)) \le V(x(0)) \le \beta, \quad \forall t \ge 0
+\]
+
+Because $\Omega_\beta$ is a compact set,\footnote{$\Omega_\beta$ is closed by definition and bounded, since it is contained in $B_r$.} we conclude from Theorem 3.3 that (4.1) has a unique solution defined for all $t \ge 0$ whenever $x(0) \in \Omega_\beta$. As $V(x)$ is continuous and $V(0) = 0$, there is $\delta > 0$ such that
+\[
+\|x\| \le \delta \Rightarrow V(x) < \beta
+\]
+
+Then,
+\[
+B_\delta \subset \Omega_\beta \subset B_r
+\]
+and
+\[
+x(0) \in B_\delta \Rightarrow x(0) \in \Omega_\beta \Rightarrow x(t) \in \Omega_\beta \Rightarrow x(t) \in B_r
+\]
+
+Therefore,
+\[
+\|x(0)\| < \delta \Rightarrow \|x(t)\| < r \le \varepsilon, \quad \forall t \ge 0
+\]
+which shows that the equilibrium point $x = 0$ is stable.
+
+Now, assume that (4.4) holds as well. To show asymptotic stability, we need to show that $x(t) \to 0$ as $t \to \infty$; that is, for every $\alpha > 0$, there is $T > 0$ such that $\|x(t)\| < \alpha$, for all $t > T$. By repetition of previous arguments, we know that for every $\alpha > 0$, we can choose $\beta > 0$ such that $\Omega_\beta \subset B_\alpha$. Therefore, it is sufficient to show that $V(x(t)) \to 0$ as $t \to \infty$. Since $V(x(t))$ is monotonically decreasing and bounded from below by zero,
+\[
+V(x(t)) \to c \ge 0 \quad \text{as } t \to \infty
+\]
+
+To show that $c = 0$, we use a contradiction argument. Suppose $c > 0$. By continuity of $V(x)$, there is $d > 0$ such that $B_d \subset \Omega_c$. The limit $V(x(t)) \to c > 0$ implies that the trajectory $x(t)$ lies outside the ball $B_d$ for all $t \ge 0$. Let $-\gamma = \max_{d \le \|x\| \le r} \dot{V}(x)$, which exists because the continuous function $\dot{V}(x)$ has a maximum over the compact set $\{ d \le \|x\| \le r \}$. By (4.4), $-\gamma < 0$. It follows that
+\[
+V(x(t)) = V(x(0)) + \int_0^t \dot{V}(x(\tau)) \, d\tau
+\le V(x(0)) - \gamma t
+\]
+
+Since the right-hand side will eventually become negative, the inequality contradicts the assumption that $c > 0$.
+\hfill $\square$
+
+\medskip
+
+A continuously differentiable function $V(x)$ satisfying (4.2) and (4.3) is called a \emph{Lyapunov function}. The surface $V(x) = c$, for some $c > 0$, is called a \emph{Lyapunov surface} or a \emph{level surface}. Using Lyapunov surfaces, we notice that Figure 4.2 makes the theorem intuitively clear. It shows Lyapunov surfaces for increasing values of $c$. The condition $\dot{V} \le 0$ implies that when a trajectory crosses a Lyapunov surface $V(x) = c$, it moves inside the set $\Omega_c = \{ x \in \mathbb{R}^n \mid V(x) \le c \}$ and can never come out again. When $\dot{V} < 0$, the trajectory moves from one Lyapunov surface to an inner Lyapunov surface with a smaller $c$. As $c$ decreases, the Lyapunov surface $V(x) = c$ shrinks to the origin, showing that the trajectory approaches the origin as $t \to \infty$.
+\footnote{See [10, Theorem 4-20].}
+

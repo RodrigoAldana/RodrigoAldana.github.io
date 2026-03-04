@@ -1,0 +1,119 @@
+\input{content/macros.tex}
+
+\PanelTitle{Definition 4.1 (Lyapunov stability)}
+
+Consider the autonomous system
+
+\[
+\dot{x} = f(x), \qquad f(0)=0
+\]
+
+so that the origin is an equilibrium point.
+
+The equilibrium is said to be \textbf{stable in the sense of Lyapunov} if
+
+\[
+\forall \varepsilon > 0 \; \exists \delta(\varepsilon) > 0
+\]
+
+such that
+
+\[
+\|x(0)\| < \delta \Rightarrow \|x(t)\| < \varepsilon
+\quad \forall t \ge 0 .
+\]
+
+\textbf{1. Geometric meaning}
+
+The definition compares two balls centered at the equilibrium.
+
+\begin{itemize}
+\item an outer ball of radius $\varepsilon$
+\item an inner ball of radius $\delta$
+\end{itemize}
+
+The property says that if the trajectory starts inside the $\delta$
+ball, it will never leave the $\varepsilon$ ball.
+
+Thus stability is a \textbf{confinement property}.  
+The trajectory may move inside the $\varepsilon$ region, but it cannot
+escape it.
+
+\textbf{2. The order of quantifiers}
+
+The most important part of the definition is the order
+
+\[
+\forall \varepsilon >0 \quad \exists \delta(\varepsilon) >0 .
+\]
+
+This means the following.
+
+First the challenger chooses $\varepsilon$.
+
+Then we must produce a value of $\delta$ that guarantees the property
+for that value of $\varepsilon$.
+
+The dependence $\delta=\delta(\varepsilon)$ is therefore essential.
+
+If the order were reversed,
+
+\[
+\exists \delta>0 \quad \forall \varepsilon>0
+\]
+
+the definition would be impossible to satisfy.
+
+\textbf{3. What stability does not require}
+
+The definition does not require trajectories to approach the
+equilibrium.
+
+A trajectory may orbit forever around the equilibrium and still be
+stable.
+
+A typical example is a frictionless pendulum, whose trajectories are
+closed orbits.
+
+\textbf{4. Asymptotic stability}
+
+An equilibrium is \textbf{asymptotically stable} if
+
+\begin{itemize}
+\item it is Lyapunov stable
+\item trajectories starting sufficiently close satisfy
+\end{itemize}
+
+\[
+\lim_{t\to\infty} x(t)=0 .
+\]
+
+Thus asymptotic stability combines
+
+\[
+\text{confinement} + \text{convergence}.
+\]
+
+\textbf{5. Why the definition requires $t\ge0$}
+
+The condition
+
+\[
+\|x(t)\| < \varepsilon \quad \forall t \ge 0
+\]
+
+means that the trajectory must remain inside the $\varepsilon$ region
+for all future time.
+
+If the condition held only for a finite time interval, the trajectory
+could eventually escape.
+
+\textbf{6. Interpretation}
+
+Lyapunov stability answers the question:
+
+\emph{If the system is slightly perturbed from equilibrium, will the
+state remain close to it?}
+
+This notion is fundamental because real systems are never initialized
+exactly at equilibrium.
