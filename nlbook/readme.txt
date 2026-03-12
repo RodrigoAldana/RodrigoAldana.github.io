@@ -66,11 +66,18 @@ project_root/
       app.js
       panel_runtime.js
 
+      lib/
+          scene.js
+          phase_portrait.js
+          rk4.js
+          sliders.js
+
   build/
       main.html
       panels/
 
   Makefile
+  package.json
 
 
 =====================================================================
@@ -169,6 +176,62 @@ Panels request animations using
 
 The runtime loads animations dynamically.
 
+Animations typically define a dynamical system and pass it to a
+shared visualization engine located in:
+
+    web/lib/scene.js
+    web/lib/phase_portrait.js
+
+This engine handles:
+
+- numerical integration
+- rendering the phase portrait
+- background trajectories
+- user-clicked trajectories
+- fading trajectory trails
+- parameter sliders
+- zoom controls
+
+Integration uses a fourth-order Runge–Kutta method implemented in
+
+    web/lib/rk4.js
+
+Animations define the system
+
+    \dot{x} = f(x,p)
+
+and specify parameters and domain bounds.
+
+
+Example animation configuration:
+
+    export async function mount(container){
+
+        return mountPhaseScene(container,{
+
+            system:(x,p)=>[
+                x[1],
+                -p.a*Math.sin(x[0]) - p.b*x[1]
+            ],
+
+            params:{
+                a:{value:2,min:0.5,max:5,step:0.1},
+                b:{value:0.4,min:0,max:2,step:0.05}
+            },
+
+            domain:{
+                xmin:-Math.PI,
+                xmax: Math.PI,
+                ymin:-4,
+                ymax: 4
+            }
+
+        })
+    }
+
+Parameter sliders are generated automatically from the `params`
+configuration.
+
 
 ------------------------------
 filters/
@@ -229,6 +292,28 @@ Responsible for:
 - rendering mathematics
 - mounting animations
 
+LIBRARY FILES
+
+The directory
+
+    web/lib/
+
+contains reusable visualization components:
+
+scene.js
+    High-level animation wrapper that mounts the phase portrait and
+    parameter sliders.
+
+phase_portrait.js
+    Core visualization engine that renders trajectories and handles
+    user interaction.
+
+rk4.js
+    Numerical integrator used for simulating trajectories.
+
+sliders.js
+    Utility for creating parameter sliders.
+
 
 ------------------------------
 build/
@@ -278,11 +363,24 @@ Verify installation:
 
 PYTHON 3
 
-Python is used only to run a simple local web server.
+Python is used to run a simple local web server.
 
 Verify installation:
 
     python3 --version
+
+
+OPTIONAL: NODE.JS
+
+Node can also be used to run the development server.
+
+Install dependencies:
+
+    npm install
+
+Run the server:
+
+    npm run serve
 
 
 =====================================================================
@@ -323,6 +421,10 @@ Then open the following address in a browser:
 
 A server is required because browsers block fetch() requests when
 opening files directly from disk.
+
+Alternatively, if Node is installed:
+
+    npm run serve
 
 
 =====================================================================
@@ -438,24 +540,6 @@ Animations must export the function
 and must return an object containing
 
     destroy()
-
-
-Example skeleton:
-
-    export async function mount(container){
-
-        const div = document.createElement("div")
-        div.innerText = "animation placeholder"
-
-        container.appendChild(div)
-
-        return {
-            destroy: async ()=>{
-                container.removeChild(div)
-            }
-        }
-
-    }
 
 
 STEP 3

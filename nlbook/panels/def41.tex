@@ -5,115 +5,108 @@
 Consider the autonomous system
 
 \[
-\dot{x} = f(x), \qquad f(0)=0
+\dot{x} = f(x), \qquad f(0)=0 .
 \]
 
-so that the origin is an equilibrium point.
+The origin is an equilibrium point.  
+Lyapunov stability answers the following question:
 
-The equilibrium is said to be \textbf{stable in the sense of Lyapunov} if
+\emph{If the system is slightly perturbed from equilibrium, will the
+state remain close to it?}
+
+The equilibrium is \textbf{stable in the sense of Lyapunov} if
 
 \[
-\forall \varepsilon > 0 \; \exists \delta(\varepsilon) > 0
+\forall \varepsilon > 0 \quad \exists \delta(\varepsilon) > 0
 \]
 
 such that
 
 \[
-\|x(0)\| < \delta \Rightarrow \|x(t)\| < \varepsilon
-\quad \forall t \ge 0 .
+\|x(0)\| < \delta
+\quad \Rightarrow \quad
+\|x(t)\| < \varepsilon
+\qquad \forall t \ge 0 .
 \]
 
-\textbf{1. Geometric meaning}
+\textbf{Two neighborhoods of the equilibrium}
+
+\begin{center}
+\includegraphics[width=260px]{../../figures/balls.svg}
+\end{center}
 
 The definition compares two balls centered at the equilibrium.
 
 \begin{itemize}
 \item an outer ball of radius $\varepsilon$
-\item an inner ball of radius $\delta$
+\item a smaller ball of radius $\delta$
 \end{itemize}
 
-The property says that if the trajectory starts inside the $\delta$
-ball, it will never leave the $\varepsilon$ ball.
+The outer ball represents how far we allow the trajectory to move
+from the equilibrium.  
+The inner ball represents how close the initial condition must be.
 
-Thus stability is a \textbf{confinement property}.  
-The trajectory may move inside the $\varepsilon$ region, but it cannot
-escape it.
+The definition requires that trajectories starting inside the
+$\delta$ ball remain inside the $\varepsilon$ ball for all future time.
 
-\textbf{2. The order of quantifiers}
+\textbf{Lyapunov stability}
 
-The most important part of the definition is the order
+\begin{center}
+\includegraphics[width=260px]{../../figures/lyap.svg}
+\end{center}
 
-\[
-\forall \varepsilon >0 \quad \exists \delta(\varepsilon) >0 .
-\]
+Trajectories starting in the $\delta$ neighborhood may move away
+from the origin and even leave the $\delta$ ball.
 
-This means the following.
+However, they remain confined inside the larger $\varepsilon$ ball.
+The state never escapes the neighborhood of the equilibrium.
 
-First the challenger chooses $\varepsilon$.
+Thus Lyapunov stability is a property of \emph{confinement}.
 
-Then we must produce a value of $\delta$ that guarantees the property
-for that value of $\varepsilon$.
+The definition does not require trajectories to converge to the
+equilibrium. They may continue moving indefinitely inside the
+$\varepsilon$ region.
 
-The dependence $\delta=\delta(\varepsilon)$ is therefore essential.
+\textbf{Instability}
 
-If the order were reversed,
+\begin{center}
+\includegraphics[width=260px]{../../figures/unstable.svg}
+\end{center}
 
-\[
-\exists \delta>0 \quad \forall \varepsilon>0
-\]
+An equilibrium is unstable if arbitrarily small perturbations can
+eventually move away from it.
 
-the definition would be impossible to satisfy.
+Even if the initial state starts extremely close to the equilibrium,
+the trajectory may leave any prescribed neighborhood.
 
-\textbf{3. What stability does not require}
+\textbf{Asymptotic stability}
 
-The definition does not require trajectories to approach the
-equilibrium.
+\begin{center}
+\includegraphics[width=260px]{../../figures/asymp.svg}
+\end{center}
 
-A trajectory may orbit forever around the equilibrium and still be
-stable.
-
-A typical example is a frictionless pendulum, whose trajectories are
-closed orbits.
-
-\textbf{4. Asymptotic stability}
-
-An equilibrium is \textbf{asymptotically stable} if
-
-\begin{itemize}
-\item it is Lyapunov stable
-\item trajectories starting sufficiently close satisfy
-\end{itemize}
+A stronger notion of stability occurs when trajectories not only
+remain close to the equilibrium but also converge to it:
 
 \[
-\lim_{t\to\infty} x(t)=0 .
+\lim_{t\to\infty} x(t) = 0 .
 \]
 
-Thus asymptotic stability combines
+In this case the equilibrium is called \textbf{asymptotically stable}.
+
+\textbf{The role of the quantifiers}
+
+The order
 
 \[
-\text{confinement} + \text{convergence}.
+\forall \varepsilon > 0 \quad \exists \delta(\varepsilon) > 0
 \]
 
-\textbf{5. Why the definition requires $t\ge0$}
+is essential.
 
-The condition
+First the size of the allowed neighborhood $\varepsilon$ is chosen.
+Then we must determine how small the initial perturbation $\delta$
+must be so that trajectories never leave that neighborhood.
 
-\[
-\|x(t)\| < \varepsilon \quad \forall t \ge 0
-\]
-
-means that the trajectory must remain inside the $\varepsilon$ region
-for all future time.
-
-If the condition held only for a finite time interval, the trajectory
-could eventually escape.
-
-\textbf{6. Interpretation}
-
-Lyapunov stability answers the question:
-
-\emph{If the system is slightly perturbed from equilibrium, will the
-state remain close to it?}
-
-This notion is fundamental because real systems are never initialized
-exactly at equilibrium.
+Smaller values of $\varepsilon$ typically require smaller values of
+$\delta$.

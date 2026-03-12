@@ -1,79 +1,81 @@
 <h1 class="unnumbered" id="definition-4.1-lyapunov-stability">Definition
 4.1 (Lyapunov stability)</h1>
 <p>Consider the autonomous system</p>
-<p><span class="math display">\[\dot{x} = f(x), \qquad
-f(0)=0\]</span></p>
-<p>so that the origin is an equilibrium point.</p>
-<p>The equilibrium is said to be <strong>stable in the sense of
-Lyapunov</strong> if</p>
-<p><span class="math display">\[\forall \varepsilon &gt; 0 \; \exists
+<p><span class="math display">\[\dot{x} = f(x), \qquad f(0)=0
+.\]</span></p>
+<p>The origin is an equilibrium point. Lyapunov stability answers the
+following question:</p>
+<p><em>If the system is slightly perturbed from equilibrium, will the
+state remain close to it?</em></p>
+<p>The equilibrium is <strong>stable in the sense of Lyapunov</strong>
+if</p>
+<p><span class="math display">\[\forall \varepsilon &gt; 0 \quad \exists
 \delta(\varepsilon) &gt; 0\]</span></p>
 <p>such that</p>
-<p><span class="math display">\[\|x(0)\| &lt; \delta \Rightarrow
+<p><span class="math display">\[\|x(0)\| &lt; \delta
+\quad \Rightarrow \quad
 \|x(t)\| &lt; \varepsilon
-\quad \forall t \ge 0 .\]</span></p>
-<p><strong>1. Geometric meaning</strong></p>
+\qquad \forall t \ge 0 .\]</span></p>
+<p><strong>Two neighborhoods of the equilibrium</strong></p>
+<div class="center">
+<p><img src="../../figures/balls.svg" width="260" alt="image" /></p>
+</div>
 <p>The definition compares two balls centered at the equilibrium.</p>
 <ul>
 <li><p>an outer ball of radius <span
 class="math inline">\(\varepsilon\)</span></p></li>
-<li><p>an inner ball of radius <span
+<li><p>a smaller ball of radius <span
 class="math inline">\(\delta\)</span></p></li>
 </ul>
-<p>The property says that if the trajectory starts inside the <span
-class="math inline">\(\delta\)</span> ball, it will never leave the
-<span class="math inline">\(\varepsilon\)</span> ball.</p>
-<p>Thus stability is a <strong>confinement property</strong>. The
-trajectory may move inside the <span
-class="math inline">\(\varepsilon\)</span> region, but it cannot escape
-it.</p>
-<p><strong>2. The order of quantifiers</strong></p>
-<p>The most important part of the definition is the order</p>
-<p><span class="math display">\[\forall \varepsilon &gt;0 \quad \exists
-\delta(\varepsilon) &gt;0 .\]</span></p>
-<p>This means the following.</p>
-<p>First the challenger chooses <span
-class="math inline">\(\varepsilon\)</span>.</p>
-<p>Then we must produce a value of <span
-class="math inline">\(\delta\)</span> that guarantees the property for
-that value of <span class="math inline">\(\varepsilon\)</span>.</p>
-<p>The dependence <span
-class="math inline">\(\delta=\delta(\varepsilon)\)</span> is therefore
-essential.</p>
-<p>If the order were reversed,</p>
-<p><span class="math display">\[\exists \delta&gt;0 \quad \forall
-\varepsilon&gt;0\]</span></p>
-<p>the definition would be impossible to satisfy.</p>
-<p><strong>3. What stability does not require</strong></p>
-<p>The definition does not require trajectories to approach the
-equilibrium.</p>
-<p>A trajectory may orbit forever around the equilibrium and still be
-stable.</p>
-<p>A typical example is a frictionless pendulum, whose trajectories are
-closed orbits.</p>
-<p><strong>4. Asymptotic stability</strong></p>
-<p>An equilibrium is <strong>asymptotically stable</strong> if</p>
-<ul>
-<li><p>it is Lyapunov stable</p></li>
-<li><p>trajectories starting sufficiently close satisfy</p></li>
-</ul>
-<p><span class="math display">\[\lim_{t\to\infty} x(t)=0 .\]</span></p>
-<p>Thus asymptotic stability combines</p>
-<p><span class="math display">\[\text{confinement} +
-\text{convergence}.\]</span></p>
-<p><strong>5. Why the definition requires <span
-class="math inline">\(t\ge0\)</span></strong></p>
-<p>The condition</p>
-<p><span class="math display">\[\|x(t)\| &lt; \varepsilon \quad \forall
-t \ge 0\]</span></p>
-<p>means that the trajectory must remain inside the <span
-class="math inline">\(\varepsilon\)</span> region for all future
-time.</p>
-<p>If the condition held only for a finite time interval, the trajectory
-could eventually escape.</p>
-<p><strong>6. Interpretation</strong></p>
-<p>Lyapunov stability answers the question:</p>
-<p><em>If the system is slightly perturbed from equilibrium, will the
-state remain close to it?</em></p>
-<p>This notion is fundamental because real systems are never initialized
-exactly at equilibrium.</p>
+<p>The outer ball represents how far we allow the trajectory to move
+from the equilibrium. The inner ball represents how close the initial
+condition must be.</p>
+<p>The definition requires that trajectories starting inside the <span
+class="math inline">\(\delta\)</span> ball remain inside the <span
+class="math inline">\(\varepsilon\)</span> ball for all future time.</p>
+<p><strong>Lyapunov stability</strong></p>
+<div class="center">
+<p><img src="../../figures/lyap.svg" width="260" alt="image" /></p>
+</div>
+<p>Trajectories starting in the <span
+class="math inline">\(\delta\)</span> neighborhood may move away from
+the origin and even leave the <span
+class="math inline">\(\delta\)</span> ball.</p>
+<p>However, they remain confined inside the larger <span
+class="math inline">\(\varepsilon\)</span> ball. The state never escapes
+the neighborhood of the equilibrium.</p>
+<p>Thus Lyapunov stability is a property of <em>confinement</em>.</p>
+<p>The definition does not require trajectories to converge to the
+equilibrium. They may continue moving indefinitely inside the <span
+class="math inline">\(\varepsilon\)</span> region.</p>
+<p><strong>Instability</strong></p>
+<div class="center">
+<p><img src="../../figures/unstable.svg" width="260" alt="image" /></p>
+</div>
+<p>An equilibrium is unstable if arbitrarily small perturbations can
+eventually move away from it.</p>
+<p>Even if the initial state starts extremely close to the equilibrium,
+the trajectory may leave any prescribed neighborhood.</p>
+<p><strong>Asymptotic stability</strong></p>
+<div class="center">
+<p><img src="../../figures/asymp.svg" width="260" alt="image" /></p>
+</div>
+<p>A stronger notion of stability occurs when trajectories not only
+remain close to the equilibrium but also converge to it:</p>
+<p><span class="math display">\[\lim_{t\to\infty} x(t) = 0
+.\]</span></p>
+<p>In this case the equilibrium is called <strong>asymptotically
+stable</strong>.</p>
+<p><strong>The role of the quantifiers</strong></p>
+<p>The order</p>
+<p><span class="math display">\[\forall \varepsilon &gt; 0 \quad \exists
+\delta(\varepsilon) &gt; 0\]</span></p>
+<p>is essential.</p>
+<p>First the size of the allowed neighborhood <span
+class="math inline">\(\varepsilon\)</span> is chosen. Then we must
+determine how small the initial perturbation <span
+class="math inline">\(\delta\)</span> must be so that trajectories never
+leave that neighborhood.</p>
+<p>Smaller values of <span class="math inline">\(\varepsilon\)</span>
+typically require smaller values of <span
+class="math inline">\(\delta\)</span>.</p>
