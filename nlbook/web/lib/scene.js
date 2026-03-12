@@ -1,36 +1,60 @@
-export function createSlider(container, label, cfg, onChange){
+import {createPhasePortrait} from "./phase_portrait.js"
+import {createSlider} from "./sliders.js"
 
-  const row = document.createElement("div")
-  row.style.display = "flex"
-  row.style.flexDirection = "column"
-  row.style.gap = "6px"
-  row.style.margin = "10px 0"
-  row.style.width = "100%"
-  row.style.maxWidth = "100%"
-  row.style.boxSizing = "border-box"
+export function mountPhaseScene(container, config){
 
-  const text = document.createElement("div")
-  text.textContent = label + ": " + cfg.value
-  text.style.fontSize = "14px"
+  const canvas = document.createElement("canvas")
+  canvas.width = 500
+  canvas.height = 400
 
-  const slider = document.createElement("input")
-  slider.type = "range"
-  slider.min = cfg.min
-  slider.max = cfg.max
-  slider.step = cfg.step
-  slider.value = cfg.value
-  slider.style.width = "100%"
-  slider.style.maxWidth = "100%"
-  slider.style.boxSizing = "border-box"
-  slider.style.margin = "0"
+  const controls = document.createElement("div")
 
-  slider.oninput = ()=>{
-      const v = parseFloat(slider.value)
-      text.textContent = label + ": " + v
-      onChange(v)
+  container.appendChild(canvas)
+  container.appendChild(controls)
+
+  const params = {}
+
+  Object.keys(config.params).forEach(k=>{
+      params[k] = config.params[k].value
+  })
+
+  const phase = createPhasePortrait(
+      canvas,
+      config.system,
+      params,
+      config.domain,
+      config.options || {}
+  )
+
+  Object.entries(config.params).forEach(([name,cfg])=>{
+      createSlider(controls, name, cfg, v=>{
+          params[name]=v
+      })
+  })
+
+  createSlider(controls,"zoom",
+      {min:0.5,max:3,step:0.1,value:1},
+      z=>phase.setZoom(z)
+  )
+
+  let last = performance.now()
+
+  function loop(t){
+
+      const dt = (t-last)/1000
+      last = t
+
+      phase.step(dt)
+      phase.draw()
+
+      requestAnimationFrame(loop)
   }
 
-  row.appendChild(text)
-  row.appendChild(slider)
-  container.appendChild(row)
+  requestAnimationFrame(loop)
+
+  return {
+      destroy(){
+          container.innerHTML=""
+      }
+  }
 }
