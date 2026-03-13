@@ -6,6 +6,14 @@
 <title>Lyapunov Interactive</title>
 
 <style>
+#resizer{
+  background:var(--border);
+  cursor:col-resize;
+  border-radius:6px;
+}
+#resizer:hover{
+  background:var(--accent);
+}
 :root{
   --bg:#0b0f14;
   --panel:#0f1620;
@@ -16,7 +24,7 @@
   --border:#1e2a3a;
 }
 html,body{height:100%;margin:0;background:var(--bg);color:var(--text);font-family:system-ui}
-.app{height:100%;display:grid;grid-template-columns:1.15fr 0.85fr;gap:12px;padding:12px;box-sizing:border-box}
+.app{height:100%;display:grid;grid-template-columns:1.14fr 6px 0.86fr;gap:12px;padding:12px;box-sizing:border-box}
 .card{background:var(--panel);border:1px solid var(--border);border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
 .head{padding:12px 14px;border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:center}
 .body{padding:14px;overflow:auto;line-height:1.5}
@@ -41,15 +49,15 @@ window.MathJax = {
 <body>
 <div class="app">
 
-<section class="card">
+<section class="card" id="leftPanel">
   <div class="head">
     <div>Source</div>
     <div class="tag" id="srcTag">build/main.html</div>
   </div>
   <div class="body" id="source"></div>
 </section>
-
-<aside class="card">
+<div id="resizer"></div>
+<aside class="card" id="rightPanel">
   <div class="head">
     <div>Expansion</div>
     <div class="tag" id="panelTag">none</div>
