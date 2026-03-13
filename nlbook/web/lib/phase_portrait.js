@@ -68,13 +68,12 @@ export function createPhasePortrait(canvas, system, params, domain, options={}){
 
       const x = d.xmin + Math.random()*(d.xmax-d.xmin)
       const y = d.ymin + Math.random()*(d.ymax-d.ymin)
-
+      const lifetime = config.ambientLifetime*(0.5 + Math.random())
       randomTraj.push({
-          x:[x,y],
-          path:[],
-          life: initial
-              ? Math.random()*config.ambientLifetime
-              : 0
+        x:[x,y],
+        path:[],
+        life: initial ? Math.random()*lifetime : 0,
+        lifetime
       })
   }
 
@@ -86,7 +85,7 @@ export function createPhasePortrait(canvas, system, params, domain, options={}){
 
       userTraj.forEach(t=>{
           t.x = rk4Step(t.x, dt, system, params)
-          t.path.push([...t.x])
+          t.path.push([t.x[0], t.x[1]])
 
           if(t.path.length > config.pathLength){
               t.path.shift()
@@ -98,14 +97,14 @@ export function createPhasePortrait(canvas, system, params, domain, options={}){
       randomTraj.forEach(t=>{
 
           t.x = rk4Step(t.x, dt, system, params)
-          t.path.push([...t.x])
+          t.path.push([t.x[0], t.x[1]])
           t.life += dt
 
           if(t.path.length > config.pathLength){
               t.path.shift()
           }
 
-          if(t.life < config.ambientLifetime){
+          if(t.life < t.lifetime){
 
               survivors.push(t)
 
@@ -116,11 +115,14 @@ export function createPhasePortrait(canvas, system, params, domain, options={}){
               const x = d.xmin + Math.random()*(d.xmax-d.xmin)
               const y = d.ymin + Math.random()*(d.ymax-d.ymin)
 
-              survivors.push({
-                  x:[x,y],
-                  path:[],
-                  life:0
-              })
+              const lifetime = config.ambientLifetime*(0.5 + Math.random())
+
+	survivors.push({
+	    x:[x,y],
+	    path:[],
+	    life:0,
+	    lifetime
+	})
 
           }
 
@@ -237,7 +239,7 @@ export function createPhasePortrait(canvas, system, params, domain, options={}){
 
       randomTraj.forEach(t=>{
 
-          const lifeFade = 1 - (t.life / config.ambientLifetime)
+          const lifeFade = 1 - (t.life / t.lifetime)
 
           for(let i=1;i<t.path.length;i++){
 

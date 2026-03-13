@@ -41,7 +41,10 @@ export function mountPhaseScene(container, config){
 
   function loop(t){
 
-      const dt = (t-last)/1000
+      let dt = (t-last)/1000
+	last = t
+
+	dt = Math.min(dt, 0.03)
       last = t
 
       phase.step(dt)
